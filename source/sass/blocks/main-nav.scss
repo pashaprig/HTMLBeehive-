@@ -1,7 +1,27 @@
+.main-nav {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
   gap: 48px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: row;
+    gap: 35px;
+  }
+}
+
+.main-nav__item {
+  @media (max-width: $tablet-width) {
+    &:first-child {
+      order: 4;
+    }
+  }
 }
 
 .main-nav__btn {
@@ -13,13 +33,16 @@
   background: transparent;
   border: unset;
 
-  &--bee {
-    picture {
-      margin-left: -2px;
-    }
-  }
-
   svg {
     fill: none;
   }
+
+  @media (max-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.main-nav__favicon {
+  margin-left: -2px;
 }

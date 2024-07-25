@@ -26,61 +26,68 @@
     <div class="page-header__wrapper">
       <div class="page-header__menu">
         <div class="page-header__honeycomb">
-          <button class="main-nav__btn main-nav__btn--bee" type="button">
+          <a href="#" class="">
             <span class="visually-hidden">Подробиці</span>
             <picture>
               <source type="image/webp" srcset="img/img/bee.webp">
-              <img width="38" height="38" class="" src="img/img/bee.png" alt="Бджола">
+              <img width="38" height="38" class="main-nav__favicon desktop-only" src="img/img/bee.png" alt="Бджола">
             </picture>
-          </button>
+          </a>
           <picture>
             <source type="image/webp" srcset="img/img/logo.webp">
-            <img width="121" height="83" class="page-header__logo" src="img/img/logo.png" alt="Доготип">
+            <img width="121" height="83" class="page-header__logo desktop-only" src="img/img/logo.png" alt="Доготип">
           </picture>
+          <a href="#" class="mobile-only">
+            <picture>
+              <source type="image/webp" srcset="img/img/logo.webp">
+              <img width="121" height="83" class="page-header__logo" src="img/img/logo.png" alt="Доготип">
+            </picture>
+          </a>
+
         </div>
-          <nav class="main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <button class="main-nav__btn" type="button">
-                  <span class="visually-hidden">Меню</span>
-                  <svg width="27" height="22">
-                    <use xlink:href="img/sprite.svg#menu"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="main-nav__item">
-                <button class="main-nav__btn" type="button">
-                  <span class="visually-hidden">Пошук</span>
-                  <svg width="27" height="22">
-                    <use xlink:href="img/sprite.svg#find"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="main-nav__item">
-                <button class="main-nav__btn" type="button">
-                  <span class="visually-hidden">Особистий кабінет</span>
-                  <svg width="27" height="27">
-                    <use xlink:href="img/sprite.svg#account"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="main-nav__item">
-                <button class="main-nav__btn" type="button">
-                  <span class="visually-hidden">Корзина</span>
-                  <svg width="27" height="28">
-                    <use xlink:href="img/sprite.svg#basket"></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
-          </nav>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <button class="main-nav__btn" type="button">
+                <span class="visually-hidden">Меню</span>
+                <svg width="27" height="22">
+                  <use xlink:href="img/sprite.svg#menu"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="main-nav__item">
+              <button class="main-nav__btn" type="button">
+                <span class="visually-hidden">Пошук</span>
+                <svg width="27" height="22">
+                  <use xlink:href="img/sprite.svg#find"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="main-nav__item">
+              <button class="main-nav__btn" type="button">
+                <span class="visually-hidden">Особистий кабінет</span>
+                <svg width="27" height="27">
+                  <use xlink:href="img/sprite.svg#account"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="main-nav__item">
+              <button class="main-nav__btn" type="button">
+                <span class="visually-hidden">Корзина</span>
+                <svg width="27" height="28">
+                  <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="page-header__about">
-        <h1 class="page-header__subheading heading">Beehive Cosmetics</h1>
+        <h1 class="page-header__subheading heading desktop-only">Beehive Cosmetics</h1>
         <h2 class="page-header__heading heading">преміальна косметика на&nbsp;основі меду</h2>
-        <p class="page-header__text">віртуозне поєднання натуральності та технологій</p>
+        <p class="page-header__text desktop-only">віртуозне поєднання натуральності та технологій</p>
         <div class="page-header__next">
-          <button class="btn" type="button">
+          <button class="btn page-header__next-btn" type="button">
             <span>Переглянути продукцію</span>
             <svg width="20" height="15">
               <use xlink:href="img/sprite.svg#arrowright"></use>
