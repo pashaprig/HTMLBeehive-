@@ -49,24 +49,23 @@ button {
 .btn {
   box-sizing: border-box;
   display: flex;
+  gap: 10px;
   align-items: center;
   justify-content: center;
-  min-width: 250px;
-  padding: 10px;
-  color: $basic-white;
-  background-color: $main-color;
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  border-radius: 10px;
-  border: none;
+  padding: 20px 40px;
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+button {
+  text-transform: uppercase;
 
   &:hover {
-    background-color: $btn-hover;
+    opacity: 0.7;
   }
 
   &:active {
-    opacity: 0.8;
+    opacity: 0.5;
   }
 }
 
@@ -81,17 +80,13 @@ button {
 }
 
 .heading {
-  margin-bottom: 30px;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 400;
-
-  &--small {
-    margin-bottom: 25px;
-    font-size: 36px;
-  }
+  line-height: 74.887px;
+  letter-spacing: 0.771px;
+  text-transform: uppercase;
 
   @media (max-width: $tablet-width) {
-    font-size: 24px;
+    // font-size: 24px;
   }
 }

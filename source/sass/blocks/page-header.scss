@@ -1,10 +1,18 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  text-shadow: 0px 4px 20px rgba(255, 255, 255, 0.40);
 
   @media (max-width: $tablet-width) {
-
   }
+}
+
+.page-header__action{
+  padding: 10px 20px;
+  font-size: 19.802px;
+  font-weight: 400;
+  color: #231F20;
+  background-color: #F3F3F4;
 }
 
 .page-header__wrapper {
@@ -16,13 +24,18 @@
   min-height: 720px;
   min-width: 290px;
   padding: 29px 0 0 40px;
-  background:  lightgray no-repeat url('../img/bcg/honeycomb.webp') ;
+  background: lightgray no-repeat url("../img/bcg/honeycomb.webp");
   background-size: contain;
 }
 
 .page-header__honeycomb {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
+
+  button {
+    margin-top: 10px;
+  }
 }
 
 .page-header__logo {
@@ -32,8 +45,46 @@
 .page-header__about {
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
+  justify-content: end;
   flex-grow: 1;
   padding: 0 30px;
   padding-bottom: 55px;
-  background:  lightgray no-repeat -30px 0  url('../img/bcg/tubes.webp');
+  background: lightgray no-repeat -30px 0 url("../img/bcg/tubes.webp");
 }
+
+.page-header__subheading {
+  font-size: 46px;
+}
+
+.page-header__text {
+  margin-bottom: 30px;
+  font-size: 21.41px;
+  font-weight: 400;
+}
+
+.page-header__next {
+  display: flex;
+  justify-content:space-between;
+}
+
+.slider__controls {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 31px;
+}
+
+.slider__line {
+  width: 66px;
+  height: 1px;
+  background-color: black;
+}
+
+.slider__btn {
+  font-size: 17.677px;
+  font-weight: 600;
+  padding: 0;
+  background: transparent;
+  border: unset;
+  }
