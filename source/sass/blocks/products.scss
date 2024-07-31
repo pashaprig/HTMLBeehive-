@@ -1,4 +1,5 @@
 .products {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   padding-top: 100px;
@@ -7,6 +8,7 @@
     padding-top: 80px;
   }
 }
+
 
 .products__heading {
   margin-bottom: 34px;
@@ -39,4 +41,41 @@
   display: flex;
   gap: 85px;
   margin-top: 120px;
+}
+
+.products__nav-list {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 34px;
+}
+
+.products__nav-item {
+  font-size: 12.5px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+
+  &--active {
+    text-decoration: underline;
+  }
+}
+
+.products__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  // max-width: 150px;
+
+  h3 {
+    color: #231F20;
+    font-size: 30.392px;
+    font-weight: 400;
+    line-height: 40.26px;
+    letter-spacing: 0.7px;
+  }
+}
+
+.products__list {
+  display: flex;
+  gap: 30px;
 }
