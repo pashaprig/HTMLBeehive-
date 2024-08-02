@@ -1,8 +1,24 @@
 .sets {
   margin-top: 140px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 80px;
+  }
+}
+
+.sets__heading {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.sets__list {
+  position: relative;
+  min-height: 708px;
 }
 
 .sets__item {
+  position: absolute;
   gap: 8px;
 
   &:nth-of-type(1),
@@ -12,6 +28,46 @@
       border-top: unset;
       border-left: 1px solid #e3c7bf;
     }
+  }
+
+  &:nth-of-type(1) {
+    top: 80px;
+    width: 31%;
+  }
+
+  &:nth-of-type(2) {
+    width: 19%;
+    left: calc(31% + 20px);
+    max-height: 295px;
+
+    .card__wrapper {
+      position: absolute;
+      left: calc(-100% + 16px);
+    }
+  }
+
+  &:nth-of-type(3) {
+    width: 19%;
+    right: calc(25.8% + 20px);
+    max-height: 295px;
+
+    .card__wrapper {
+      position: absolute;
+      left: calc(100% + 16px);
+    }
+  }
+
+  &:nth-of-type(4) {
+    width: 25.8%;
+    top: 80px;
+    right: 0;
+  }
+
+  &:nth-of-type(5) {
+    width: 37%;
+    right: calc(25.8% + 20px);
+    bottom: 0;
+    max-height: 380px;
   }
 
   .card__wrapper {
@@ -24,5 +80,105 @@
 
   .card__type {
     font-weight: 700;
+  }
+
+  .card__like {
+    right: 10px;
+  }
+
+  @media (max-width: $tablet-width) {
+    &.card {
+      min-width: unset;
+    }
+
+    .card__bcg {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .card__wrapper {
+      padding: 6px 0;
+    }
+
+    gap: 0;
+
+    &:nth-of-type(1) {
+      top: 0;
+      width: 100%;
+      height: 380px;
+
+      .card__pcice-wrapper {
+        padding-left: 20px;
+      }
+
+      .card__wrapper {
+        position: absolute;
+        top: unset;
+        bottom: 0;
+        border: none;
+      }
+
+      .card__about {
+        padding-right: 30%;
+        padding-left: 6px;
+        border-left: 1px solid #e3c7bf;
+      }
+    }
+
+    &:nth-of-type(2) {
+      width: calc(50% - 10px);
+      top: 405px;
+      left: unset;
+      right: 0;
+      height: 220px;
+
+      .card__pcice-wrapper {
+        padding-right: 10px;
+        text-align: right;
+      }
+
+      .card__wrapper {
+        position: absolute;
+        left: unset;
+        right: 0;
+        border: none;
+      }
+
+      .card__about {
+        position: absolute;
+        left: calc(-100%);
+        border-top: 1px solid #e3c7bf;
+      }
+    }
+
+    &:nth-of-type(3) {
+      width: calc(50% - 20px);
+      left: 0;
+      max-height: 220px;
+
+      .card__wrapper {
+        position: absolute;
+        left: calc(100% + 16px);
+      }
+    }
+
+    &:nth-of-type(4) {
+      width: 25.8%;
+      top: 80px;
+      right: 0;
+    }
+
+    &:nth-of-type(5) {
+      width: 37%;
+      right: calc(25.8% + 20px);
+      bottom: 0;
+      max-height: 380px;
+    }
+
+    .card__type,
+    .card__pcice {
+      color: white;
+      font-size: 14px;
+    }
   }
 }
