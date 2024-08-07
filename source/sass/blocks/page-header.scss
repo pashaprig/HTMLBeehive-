@@ -36,7 +36,7 @@
   min-height: 720px;
   min-width: 290px;
   padding: 29px 0 0 40px;
-  background: #f7ca50 no-repeat url("../img/bcg/honeycomb-bcg.webp");
+  background: $main-color no-repeat url("../img/bcg/honeycomb-bcg.webp");
   background-size: contain;
 
   @media (max-width: $tablet-width) {
