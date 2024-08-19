@@ -4,6 +4,10 @@
   gap: 20px;
   width: 345px;
 
+  &--blog {
+    gap: 10px;
+  }
+
   @media (max-width: $tablet-width) {
     width: 100%;
     min-width: 100%;
@@ -16,6 +20,10 @@
   flex-direction: column;
   height: 400px;
   background: #f7ca50;
+
+  &--blog {
+    height: 207px;
+  }
 }
 
 .card__info {
@@ -47,13 +55,24 @@
 .card__wrapper {
   padding: 14px 10px;
   border-top: 1px solid #e3c7bf;
+
+  &--blog {
+    padding: 0;
+    border-top: 0;
+  }
 }
 
 .card__pcice-wrapper {
   display: flex;
   justify-content: space-between;
   font-weight: 400;
-  line-height: 26px
+  line-height: 26px;
+
+  &--blog {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e3c7bf;
+  }
 }
 
 .card__name {
