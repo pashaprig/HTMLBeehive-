@@ -1,0 +1,23 @@
+.images {
+  overflow: hidden;
+  display: flex;
+  gap: 30px;
+
+  @media (max-width: $tablet-width) {
+    overflow: unset;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 16px;
+  }
+}
+
+
+.images__img {
+  object-fit: cover;
+
+  @media (max-width: $tablet-width) {
+    flex-grow: 1;
+    width: 109px;
+    height: 109px;
+  }
+}

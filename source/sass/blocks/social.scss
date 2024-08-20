@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  margin-top: 160px;
+  margin-bottom: 40px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 80px;
+  }
+}
+
+.social__list {
+  display: flex;
+  gap: 50px;
+}
