@@ -8,6 +8,10 @@
   line-height: normal;
   color: #231f20;
 
+  a {
+    color: #231f20;
+  }
+
   @media (max-width: $tablet-width) {
     font-size: 12px;
   }

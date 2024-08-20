@@ -8,9 +8,24 @@
     gap: 10px;
   }
 
+  &--popup {
+    gap: 8px;
+    width: 167px;
+    font-size: 7.5px;
+
+    .card__pcice-wrapper,
+    .card__name {
+      line-height: 12.5px;
+    }
+  }
+
   @media (max-width: $tablet-width) {
-    width: 100%;
     min-width: 100%;
+
+    &--popup {
+      width: calc(50% - 5px);
+      min-width: unset;
+    }
   }
 }
 
@@ -23,6 +38,10 @@
 
   &--blog {
     height: 207px;
+  }
+
+  &--popup {
+    height: 190px;
   }
 }
 
