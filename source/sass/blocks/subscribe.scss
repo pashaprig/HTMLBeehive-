@@ -1,0 +1,16 @@
+.subscribe {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.subscribe__form {
+  max-width: 360px;
+  margin-bottom: 80px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+}

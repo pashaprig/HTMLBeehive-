@@ -2,11 +2,13 @@
   overflow: hidden;
   display: flex;
   gap: 30px;
+  margin-bottom: 200px;
 
   @media (max-width: $tablet-width) {
     overflow: unset;
     flex-wrap: wrap;
     gap: 8px;
+    margin-bottom: 100px;
     padding: 0 16px;
   }
 }

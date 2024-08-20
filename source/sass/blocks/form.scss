@@ -1,0 +1,78 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form__input {
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  border: none;
+  color: #231f20;
+  border-bottom: 0.75px solid #191617;
+
+  &:focus {
+    outline: unset;
+  }
+
+  &::placeholder {
+    color: #9d9d9d;
+  }
+}
+
+.form__policy {
+  text-transform: none;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+
+  a {
+    color: #231f20;
+    text-decoration: underline;
+  }
+}
+
+//CheckBox
+.check {
+  font-size: 12.5px;
+  text-transform: none;
+  padding-left: 1.8em;
+}
+
+.check__input {
+  position: absolute;
+  appearance: none;
+
+  &:checked + .check__box {
+    background-image: url(../img/icons/checked.svg);
+    background-position: 50%;
+  }
+
+  &:focus + .check__box {
+    outline: 1px solid #231f20;
+  }
+
+  &:disabled + .check__box {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.check__box {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin-left: -1.8em;
+  border-radius: 3px;
+  border: 2px solid #191617;
+}
+
+.form__submit {
+  width: 100%;
+  color: white;
+  background: #191617;
+}
