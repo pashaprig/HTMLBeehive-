@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -31,6 +35,10 @@ a {
 a,
 button {
   cursor: pointer;
+}
+
+img {
+  object-fit: cover;
 }
 
 .visually-hidden {
