@@ -1,0 +1,32 @@
+.policy {
+  margin-top: -600px;
+  margin-left: 290px;
+  word-break: break-word;
+
+  h3, p, ul {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  ul {
+    list-style: disc;
+    margin-left: 30px;
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+}
+
+.policy__heading {
+  margin-bottom: 40px;
+}
+
+p.policy__no-margin {
+  margin-bottom: 0;
+}
+

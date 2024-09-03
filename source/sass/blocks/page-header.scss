@@ -3,8 +3,13 @@
   flex-direction: column;
   text-shadow: 0px 4px 20px rgba(255, 255, 255, 0.4);
 
-  @media (max-width: $tablet-width) {
-
+  &--policy {
+    .page-header__menu {
+      background: transparent;
+    }
+    .page-header__about {
+      display: none;
+    }
   }
 }
 
@@ -15,6 +20,8 @@
 }
 
 .page-header__action {
+  overflow: hidden;
+  position: relative;
   padding: 10px 20px;
   font-size: 19.802px;
   line-height: 21.33px;
