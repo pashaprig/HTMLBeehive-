@@ -21,10 +21,15 @@
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__action">
-      <span>Зареєструйтесь та отримайте подарунок!</span>
+      <div class="loop-holder">
+        <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+        <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+        <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+        <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+      </div>
     </div>
     <div class="page-header__wrapper">
-      <div class="page-header__menu">
+      <div class="page-header__menu page-header__menu--about ">
         <div class="page-header__honeycomb">
           <a href="#" class="">
             <span class="visually-hidden">Подробиці</span>
@@ -72,38 +77,22 @@
           </ul>
         </nav>
       </div>
-      <div class="page-header__about">
-        <h1 class="page-header__subheading heading desktop-only">Beehive&nbsp;Cosmetics</h1>
-        <h2 class="page-header__heading heading">преміальна косметика на&nbsp;основі меду</h2>
-        <p class="page-header__text desktop-only">віртуозне поєднання натуральності та технологій</p>
-        <div class="page-header__next">
-          <button class="btn page-header__next-btn" type="button">
-            <span>Переглянути продукцію</span>
-            <svg width="20" height="15">
-              <use xlink:href="img/sprite.svg#arrowright"></use>
-            </svg>
-          </button>
-          <div class="slider__controls">
-            <button class="slider__btn" type="button">
-              Previous
-            </button>
-            <div class="slider__line"></div>
-            <button class="slider__btn" type="button">
-              Next
-            </button>
-          </div>
-        </div>
+      <div class="page-header__about page-header__about--about">
+        <h2 class="page-header__heading heading desktop-only">Природа та технології разом у золотому складі для твоєї краси!</h2>
+        <p class="page-header__text desktop-only">Beehive Cosmetics — це преміальний український косметичний дім, що віртуозно об’єднує багатство українського меду та природних інгредієнтів з передовими технологіями, створюючи унікальну серію доглядових продуктів для волосся відкриваючи двері до нової сторінки у світі краси.</p>
       </div>
+      <p class="page-header__text page-header__text--about mobile-only">Beehive Cosmetics — це преміальний український косметичний дім, що віртуозно об’єднує багатство українського меду та природних інгредієнтів з передовими технологіями, створюючи унікальну серію доглядових продуктів для волосся відкриваючи двері до нової сторінки у світі краси.</p>
     </div>
   </header>
+
   <main>
     <nav>
       <ul class="about__nav-links">
-        <li class="about__link"><a href="#mission">Місія та Цінності</a></li>
-        <li class="about__link"><a href="#history">Історія Beehive&nbsp;Cosmetics</a></li>
-        <li class="about__link"><a href="#technology">Технології та інновації</a></li>
-        <li class="about__link"><a href="#founders">Команда та засновники</a></li>
-        <li class="about__link"><a href="#principles">Наші принципи та підхід</a></li>
+        <li class="about__link"><a href="#mission"><span>наша</span> Місія </a></li>
+        <li class="about__link"><a href="#history">Історія <span>Beehive&nbsp;Cosmetics</span></a></li>
+        <li class="about__link"><a href="#technology">Технології <span>та інновації</span></a></li>
+        <li class="about__link"><a href="#founders">Команда<span> та засновники</span></a></li>
+        <li class="about__link"><a href="#principles"><span>Наші</span> принципи<span> та підхід</span></a></li>
       </ul>
     </nav>
 
@@ -118,15 +107,15 @@
           впевненості у собі та своїй красі. Кожного дня. Краплина за краплиною, день за днем, зміцнювати та наповнювати
           ваше волосся золотом Beehive&nbsp;Cosmetics, підсилюючи жіночу сутність розкішною впевненістю у собі.</p>
       </div>
-      <img src="img/img/about/image8.webp" width="564" height="802" alt="Sampoo">
+      <img class="article__img" src="img/img/about/image8.webp" width="564" height="802" alt="Sampoo">
     </article>
 
     <article class="about__article proud" id="proud">
       <div class="proud__wrapper">
-        <img src="img/img/about/proud.webp" width="543" height="488" alt="Proud">
+        <img class="proud__img-proud" src="img/img/about/proud.webp" width="543" height="488" alt="Proud">
 
         <div class="proud__wrapper proud__wrapper--text">
-          <img src="img/img/about/482.webp" width="289" height="227" alt="482">
+          <img class="proud__img-482" src="img/img/about/482.webp" width="289" height="227" alt="482">
           <img class="proud__img-ua" src="img/img/about/ua.webp" width="524" height="233" alt="UA">
           <p class="article-text">Своїм прикладом ми показуємо, як українська компанія може поєднувати передові
             технології, Природність і розкіш.</p>
@@ -134,10 +123,10 @@
       </div>
       <div class="proud__wrapper proud__wrapper--ml">
         <div class="proud__bcg"></div>
-        <img src="img/img/about/proudtobe.webp" width="645" height="68" alt="PROUD TO BE UKRAINIAN">
+        <img class="proud__img-proudtobe" src="img/img/about/proudtobe.webp" width="645" height="68" alt="PROUD TO BE UKRAINIAN">
       </div>
     </article>
-
+<!--
     <article class="about__article history" id="history">
       <h2 class="heading history__heading">Історія Beehive&nbsp;Cosmetics</h2>
       <div class="history__wrapper">
@@ -233,7 +222,7 @@
         <img class="principles__img" src="img/img/about/flover2.webp" width="720" height="720" alt="flover">
         <img class="principles__img" src="img/img/about/girl3.webp" width="720" height="720" alt="girl">
       </div>
-    </article>
+    </article> -->
 
   </main>
 
