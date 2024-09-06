@@ -1,0 +1,30 @@
+.filter-list {
+  display: flex;
+  gap: 30px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+
+  @media (max-width: $tablet-width) {
+    gap: 10px;
+  }
+}
+
+.filter-item {
+  font-size: 12.5px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+
+  &--active {
+    text-decoration: underline;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

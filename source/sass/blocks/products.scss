@@ -55,28 +55,6 @@
   }
 }
 
-.products__nav-list {
-  display: flex;
-  gap: 30px;
-  row-gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 34px;
-
-  @media (max-width: $tablet-width) {
-    gap: 10px;
-  }
-}
-
-.products__nav-item {
-  font-size: 12.5px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
-
-  &--active {
-    text-decoration: underline;
-  }
-}
-
 .products__controls {
   flex-direction: column;
   gap: 20px;
