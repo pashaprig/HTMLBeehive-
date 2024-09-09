@@ -23,11 +23,6 @@
 
 .page-header__wrapper {
   display: flex;
-  flex-wrap: wrap;
-
-  &--blog {
-    flex-wrap: nowrap;
-  }
 
   @media (max-width: $tablet-width) {
     flex-direction: column;

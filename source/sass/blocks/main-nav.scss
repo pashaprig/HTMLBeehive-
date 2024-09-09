@@ -25,8 +25,10 @@
 }
 
 .main-nav__btn {
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -45,4 +47,36 @@
 
 .main-nav__favicon {
   margin-left: -2px;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 27px;
+  height: 2px;
+  background-color: #231F20;
+  box-shadow: 0 9px 0 0 #231F20, 0 18px 0 0 #231F20;
+  transition: all ease-in-out 500ms;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 2px;
+    background-color: #231F20;
+    transition: all ease-in-out 500ms;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
