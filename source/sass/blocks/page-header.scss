@@ -25,6 +25,10 @@
   display: flex;
   flex-wrap: wrap;
 
+  &--blog {
+    flex-wrap: nowrap;
+  }
+
   @media (max-width: $tablet-width) {
     flex-direction: column;
   }
@@ -39,6 +43,12 @@
   background-size: cover;
 
   &--policy {
+    min-height: unset;
+    background: transparent;
+  }
+
+  &--blog {
+    min-height: unset;
     background: transparent;
   }
 
@@ -85,6 +95,10 @@
   }
 }
 
+.page-header__subheading {
+  font-size: 46px;
+}
+
 .page-header__about {
   box-sizing: border-box;
   display: flex;
@@ -98,6 +112,14 @@
 
   &--policy {
     display: none;
+  }
+
+  &--blog {
+    background: transparent;
+
+    .page-header__text {
+      padding-right: 100px;
+    }
   }
 
   &--about {
@@ -123,12 +145,27 @@
       background: white no-repeat url("../img/bcg/about-heading-mob.webp");
       background-size: contain;
     }
+
+    &--blog {
+      padding: 40px 16px;
+      min-height: unset;
+      background: transparent;
+
+      .page-header__subheading {
+        font-size: 24px;
+      }
+
+      .page-header__text {
+        padding-right: 0;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 20px;
+      }
+    }
   }
 }
 
-.page-header__subheading {
-  font-size: 46px;
-}
+
 
 .page-header__text {
   margin-bottom: 30px;
