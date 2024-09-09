@@ -2,6 +2,20 @@
   box-sizing: border-box;
 }
 
+body.hidden-scroll {
+  overflow: hidden;
+  padding-right: 15px;
+}
+
+
+body.hidden-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+body.hidden-scroll {
+  scrollbar-width: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
