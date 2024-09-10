@@ -369,9 +369,20 @@
   left: -246px;
   max-width: 430px;
   color: $basic-white;
+  display: flex;
+  flex-wrap: wrap;
 
   span {
     color: black;
+  }
+
+  @media (max-width: $tablet-width) {
+    all: unset;
+    position: absolute;
+    top: 90px;
+    left: -246px;
+    max-width: 430px;
+    color: $basic-white;
   }
 }
 
