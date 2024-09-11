@@ -3,6 +3,7 @@
   z-index: 100;
 
   @media (max-width: $tablet-width) {
+    position: unset;
     display: flex;
     align-items: center;
   }

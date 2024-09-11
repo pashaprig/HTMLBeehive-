@@ -19,6 +19,7 @@
 .page-container{
   overflow: hidden;
   position: relative;
+  min-height: calc(100vh - 41px);
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 41px;

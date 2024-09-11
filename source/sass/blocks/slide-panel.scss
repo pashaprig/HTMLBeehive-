@@ -8,6 +8,11 @@
   padding-top: 145px;
   padding-left: 300px;
   transition: left 0.7s ease;
+
+  @media (max-width: $tablet-width) {
+    padding: 16px;
+    padding-top: 60px;
+  }
 }
 
 .slide-panel--open {
@@ -19,6 +24,14 @@
   top: 40px;
   left: 70px;
   margin-left: 45px;
+
+  @media (max-width: $tablet-width) {
+    top: 6px;
+    left: 16px;
+    margin-left: 0;
+    width: 77px;
+    height: 46px;
+  }
 }
 
 .slide-panel__heading{

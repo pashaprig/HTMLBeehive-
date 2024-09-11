@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Beehive Cosmetics</title>
+  <meta name="description" content="Преміальна косметика на основі меду">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body class="page-body ">
+  <div class="page-header__action">
+    <div class="loop-holder">
+      <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+      <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+      <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+      <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+      <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+      <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+      <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+      <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+      <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+      <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+      <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+      <div class="loop-holder__text">Зареєструйтесь та отримайте подарунок!</div>
+    </div>
+  </div>
+  <div class="page-container">
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const nav = document.querySelector('.main-nav');
+        const toggleButton = document.querySelector('.main-nav__toggle');
+        const slidePanel = document.getElementById('slidePanel');
+
+        // Функция для блокировки скролла колесом мыши и на сенсорных экранах
+        function preventScroll(event) {
+          event.preventDefault();
+        }
+
+        // Функция для блокировки прокрутки с клавиатуры
+        function preventScrollKeys(event) {
+          // Коды клавиш, которые управляют прокруткой
+          const keys = ['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' '];
+          if (keys.includes(event.key)) {
+            event.preventDefault();
+          }
+        }
+
+        toggleButton.addEventListener('click', () => {
+          // Определяем видимый верх экрана в момент нажатия кнопки
+          const visibleTop = window.scrollY;
+          slidePanel.style.top = `${visibleTop}px`;
+
+          // Переключение состояния панели
+          const isOpen = slidePanel.classList.toggle('slide-panel--open');
+
+          if (isOpen) {
+            // Запрещаем скролл страницы
+            window.addEventListener('wheel', preventScroll, { passive: false });
+            window.addEventListener('touchmove', preventScroll, { passive: false });
+            window.addEventListener('keydown', preventScrollKeys);
+            document.body.classList.add('hidden-scroll');
+          } else {
+            // Восстанавливаем возможность скролла
+            window.removeEventListener('wheel', preventScroll);
+            window.removeEventListener('touchmove', preventScroll);
+            window.removeEventListener('keydown', preventScrollKeys);
+            document.body.classList.remove('hidden-scroll');
+          }
+
+          // Переключение классов для меню
+          if (nav.classList.contains('main-nav--closed')) {
+            nav.classList.remove('main-nav--closed');
+            nav.classList.add('main-nav--opened');
+          } else {
+            nav.classList.remove('main-nav--opened');
+            nav.classList.add('main-nav--closed');
+          }
+        });
+      });
+
+    </script>
+    <div class="slide-panel slide-panel--close" id="slidePanel">
+      <a href="index.html"></a>
+      <img width="121" height="83" class="slide-panel__logo" src="img/img/logo.webp" alt="Логотип">
+      </a>
+      <div class="slide-panel__nav">
+        <h2 class="slide-panel__heading">догляд за Волоссям</h2>
+        <nav>
+          <ul class="slide-panel__list">
+            <li class="slide-panel__item">
+              <a href="honey.html" class="slide-panel__link">Чарівність меду</a>
+            </li>
+            <li class="slide-panel__item">
+              <a href="innovation.html" class="slide-panel__link">Інноваційні технології</a>
+            </li>
+            <li class="slide-panel__item">
+              <a href="about.html" class="slide-panel__link">ПРО нас</a>
+            </li>
+            <li class="slide-panel__item">
+              <a href="golden.html" class="slide-panel__link">Golden Routine</a>
+            </li>
+            <li class="slide-panel__item">
+              <a href="blog.html" class="slide-panel__link">БЛОГ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <header class="page-header">
+      <div class="page-header__wrapper page-header__wrapper--open">
+        <div class="page-header__menu page-header__menu--innovations">
+          <div class="page-header__honeycomb">
+            <a href="#" class="">
+              <span class="visually-hidden">Подробиці</span>
+              <img width="38" height="38" class="main-nav__favicon desktop-only" src="img/img/bee.webp" alt="Бджола">
+            </a>
+            <img width="121" height="83" class="page-header__logo desktop-only" src="img/img/logo.webp" alt="Логотип">
+            <a href="#" class="mobile-only">
+              <img width="121" height="83" class="page-header__logo" src="img/img/logo.webp" alt="Логотип">
+            </a>
+          </div>
+
+          <nav class="main-nav main-nav--closed">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <button class="main-nav__btn main-nav__toggle" type="button">
+                  <span class="visually-hidden">Меню</span>
+                </button>
+              </li>
+              <!-- <li class="main-nav__item">
+                <button class="main-nav__btn" type="button">
+                  <span class="visually-hidden">Пошук</span>
+                  <svg width="27" height="22">
+                    <use xlink:href="img/sprite.svg#find"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="main-nav__item">
+                <button class="main-nav__btn" type="button">
+                  <span class="visually-hidden">Особистий кабінет</span>
+                  <svg width="27" height="27">
+                    <use xlink:href="img/sprite.svg#account"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="main-nav__item">
+                <button class="main-nav__btn" type="button">
+                  <span class="visually-hidden">Корзина</span>
+                  <svg width="27" height="28">
+                    <use xlink:href="img/sprite.svg#basket"></use>
+                  </svg>
+                </button>
+              </li> -->
+            </ul>
+          </nav>
+        </div>
+        <div class="page-header__about page-header__about--innovations">
+          <h2 class="page-header__heading heading desktop-only">Високо-технологічне виробництво</h2>
+          <div class="header__text-wrapper">
+            <p class="page-header__text desktop-only">Beehive Cosmetics — це поєднання передових технологій та високих
+              стандартів якості, що робить наші продукти ефективними для наших споживачів.</p>
+            <p class="page-header__text desktop-only">Наша косметика на основі меду втілює у собі сучасність і
+              сміливість, залишаючись вірними принципам чесності та дотримання обіцянок.</p>
+          </div>
+        </div>
+        <!-- <p class="page-header__text page-header__text--about mobile-only">Beehive Cosmetics — це преміальний український
+          косметичний дім, що віртуозно об’єднує багатство українського меду та природних інгредієнтів з передовими
+          технологіями, створюючи унікальну серію доглядових продуктів для волосся відкриваючи двері до нової сторінки у
+          світі краси.</p> -->
+      </div>
+
+    </header>
+    <main>
+      <article class="innovations__article">
+        <div class="innovations__text-wrapper">
+          <h2 class="innovations__heading heading">Вибір та сертифікація інгредієнтів</h2>
+          <p class="innovations__about">Ми співпрацюємо з провідними світовими виробниками косметичних інгредієнтів,
+            обираючи найкраще.</p>
+          <p class="innovations__about">Кожен інгредієнт ретельно відбирається, використовуючи лише сертифіковані
+            компоненти. Мед проходить суворий контроль якості для забезпечення безпеки та ефективності нашої продукції.
+            Наш мед не містить антибіотиків, що робить нашу косметику унікальною та безпечною.</p>
+        </div>
+        <img width="720" height="720" class="innovations__img" src="img/img/innovations/image-1.webp"
+          alt="Засіб з догляду">
+      </article>
+
+      <article class="innovations__article innovations__article--reverse-order">
+        <div class="innovations__text-wrapper">
+          <h2 class="innovations__heading heading">Унікальні формули</h2>
+          <p class="innovations__about">Формули Beehive Cosmetics розкривають потужний потенціал меду в засобах для
+            догляду за волоссям та шкірою.</p>
+          <p class="innovations__about">Продукти Beehive Cosmetics містять високу концентрацію функціональних
+            інгредієнтів. У той час як в інших засобах їх вміст може бути від 0,000001 до 0,5%, ми використовуємо у
+            наших незвичайних формулах в 30-50 разів більше.</p>
+          <p class="innovations__about">Наш золотий склад містить 3-5% меду, забезпечуючи неперевершену ефективність та
+            користь для волосся. Такий підхід гарантує максимальний догляд та ефективність, який можна отримати від
+            натуральних компонентів.</p>
+        </div>
+        <img width="720" height="720" class="innovations__img" src="img/img/innovations/image-2.webp"
+          alt="Засіб з догляду">
+      </article>
+
+      <article class="innovations__block1">
+        <img width="420" height="703" src="img/img/innovations/image-3.webp" alt="Засіб з догляду">
+        <div class="innovations__text-wrapper">
+          <h2 class="innovations__heading heading">Інноваційні рішення Сучасні Технології</h2>
+          <p class="innovations__about">Ми постійно впроваджуємо новітні технології та інноваційні рішення для
+            підвищення ефективності та якості нашої продукції. Наші лабораторії досліджують нові методи використання
+            меду, які дозволяють створювати унікальні косметичні засоби.</p>
+          <p class="innovations__about">виробництво оснащене передовим обладнанням та сучасними реакторами, що
+            забезпечують контрольовані умови для змішування та дозування компонентів, забезпечуючи високу якість нашої
+            продукції.</p>
+        </div>
+        <img width="347" height="569" src="img/img/innovations/image-4.webp" alt="Засіб з догляду">
+      </article>
+
+      <article class="innovations__block2">
+        <h2 class="innovations__heading heading">Наш виробничий процес включає кілька ключових етапів</h2>
+        <div class="innovations__img-wrapper">
+          <img width="394" height="460" src="img/img/innovations/image-5.webp" alt="Засіб з догляду">
+          <img width="394" height="460" src="img/img/innovations/image-6.webp" alt="Засіб з догляду">
+          <img width="394" height="460" src="img/img/innovations/image-7.webp" alt="Засіб з догляду">
+        </div>
+      </article>
+
+      <article class="innovations__block3">
+        <div class="innovations__text-wrapper">
+          <h2 class="innovations__heading heading">Гарантії якості та Сертифікація </h2>
+          <p class="innovations__about">Наше виробництво відповідає найвищим стандартам якості, що підтверджено
+            сертифікатами ISO 9001 та ISO 22716.</p>
+          <p class="innovations__about">Ми регулярно проводимо тестування та перевірки, щоб забезпечити
+            безпеку та ефективність нашої
+            продукції. Система менеджменту якості дозволяє нам контролювати кожен етап виробництва та гарантувати високу
+            якість нашої косметики.</p>
+        </div>
+        <div class="innovations__img-wrapper">
+          <img width="338" height="472" src="img/img/innovations/image-8.webp" alt="Засіб з догляду">
+          <img width="338" height="472" src="img/img/innovations/image-9.webp" alt="Засіб з догляду">
+        </div>
+      </article>
+
+      <article class="innovations__block4">
+        <img class="main-img" width="720" height="720" src="img/img/innovations/image-10.webp" alt="Засіб з догляду">
+        <div class="innovations__text-wrapper">
+          <p class="innovations__about">Ми гарантуємо, що наша продукція створена з турботою про ваше здоров'я та красу.
+            Дякуємо, що обираєте Beehive Cosmetics!</p>
+          <div class="innovations__img-wrapper">
+            <img width="262" height="348" src="img/img/innovations/image-11.webp" alt="Засіб з догляду">
+            <img width="262" height="348" src="img/img/innovations/image-12.webp" alt="Засіб з догляду">
+          </div>
+        </div>
+
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <div class="subscribe">
+        <form class="form subscribe__form" action="#" method="post">
+          <input class="form__input" type="email" name="email" placeholder="Введіть свій email">
+          <p class="form__policy">Реєструючись, я погоджуюсь отримувати електронні листи від Beehive Cosmetics. Я
+            прочитав(ла) та погоджуюсь з <a href="#">Умовами та Політикою конфіденційності</a> Beehive Cosmetics.</p>
+          <label class="check option">
+            <input class="check__input" type="checkbox" name="subscribe" checked>
+            <span class="check__box"></span>
+            Так, Beehive Cosmetics! Надсилайте мені ваші новини
+          </label>
+          <button class="btn form__submit" type="submit">Підписатися</button>
+        </form>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="http://">
+              <svg width="30" height="30">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="http://">
+              <svg width="30" height="30">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="http://">
+              <svg width="30" height="30">
+                <use xlink:href="img/sprite.svg#tiktok"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="links">
+        <nav class="page-footer__nav">
+          <div class="page-footer__nav-wrapper">
+            <div class="page-footer__links">
+              <p class="links__heading">ласкаво просимо до&nbsp;beehive&nbsp;cosmetics</p>
+              <ul class="page-footer__nav-list">
+                <li class="page-footer__nav-item"><a href="#"><a href="#">Мій аккаунт</a></li>
+                <li class="page-footer__nav-item"><a href="#">Про нас </a></li>
+                <li class="page-footer__nav-item"><a href="#">Блог</a></li>
+                <li class="page-footer__nav-item"><a href="#">Кар'єра</a></li>
+                <li class="page-footer__nav-item"><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="page-footer__links">
+              <p class="links__heading">взаємодія</p>
+              <ul class="page-footer__nav-list">
+                <li class="page-footer__nav-item"><a href="#">Доставка та оплата</a></li>
+                <li class="page-footer__nav-item"><a href="#">Повернення та обмін</a></li>
+                <li class="page-footer__nav-item"><a href="#">Політика конфіденційності</a></li>
+                <li class="page-footer__nav-item"><a href="#">Договір публічної оферти</a></li>
+                <li class="page-footer__nav-item"><a href="#">Site Map</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="page-footer__contacts">
+          <p class="links__heading">Contact</p>
+          <p class="page-footer__nav-item">Напишіть нам</p>
+          <p class="page-footer__email"><a href="mailto:info@beehive-cosmetics.ua">info@beehive-cosmetics.ua</a></p>
+        </div>
+        <p class="page-footer__rights">© 2024 BEEHIVE COSMETICS | All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </div>
+</body>
+
+</html>

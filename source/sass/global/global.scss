@@ -5,7 +5,13 @@
 body.hidden-scroll {
   overflow: hidden;
   padding-right: 15px;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 0;
+  }
 }
+
+
 
 
 body.hidden-scroll::-webkit-scrollbar {
@@ -24,6 +30,7 @@ ul,
 blockquote {
   margin: 0;
   padding: 0;
+  word-break: break-word;
 }
 
 ul {
