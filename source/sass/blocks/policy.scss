@@ -1,5 +1,4 @@
 .policy {
-  margin-top: -600px;
   margin-left: 290px;
   word-break: break-word;
 
@@ -17,7 +16,6 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-top: 50px;
     margin-left: 0;
   }
 }

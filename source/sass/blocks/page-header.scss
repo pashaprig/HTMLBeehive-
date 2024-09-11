@@ -28,6 +28,7 @@
 
 .page-header__wrapper {
   display: flex;
+  min-height: 500px;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;

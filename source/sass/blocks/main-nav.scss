@@ -1,6 +1,6 @@
 .main-nav {
   position: fixed;
-  z-index: 5;
+  z-index: 100;
 
   @media (max-width: $tablet-width) {
     display: flex;
