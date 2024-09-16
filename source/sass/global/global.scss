@@ -11,9 +11,6 @@ body.hidden-scroll {
   }
 }
 
-
-
-
 body.hidden-scroll::-webkit-scrollbar {
   display: none;
 }
@@ -126,17 +123,18 @@ button {
 }
 
 .desktop-only {
-  display: flex;
+  display: flex !important;
+
   @media (max-width: $tablet-width) {
-    display: none;
+    display: none !important;
   }
 }
 
 .mobile-only {
-  display: none;
+  display: none !important;
 
   @media (max-width: $tablet-width) {
-    display: flex;
+    display: flex !important;
   }
 }
 
