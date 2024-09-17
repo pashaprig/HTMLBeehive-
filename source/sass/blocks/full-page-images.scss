@@ -1,0 +1,13 @@
+.full-page-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.full-page-images__img {
+  width: 50%;
+  height: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}

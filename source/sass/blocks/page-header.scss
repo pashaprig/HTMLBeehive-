@@ -149,6 +149,17 @@
     background: transparent;
   }
 
+  &--golden {
+    color: $basic-white;
+    text-shadow: unset;
+    background: $main-color no-repeat url("../img/bcg/header-bcg-golden_page.webp");
+    background-size: cover;
+
+    .page-header__heading {
+      text-shadow: 0px 4px 20px #471909;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     max-width: unset;
     min-height: 670px;
@@ -188,6 +199,18 @@
         font-size: 12px;
         font-weight: 300;
         line-height: 20px;
+      }
+    }
+
+    &--golden {
+      color: $basic-white;
+      text-shadow: unset;
+      background: $main-color no-repeat url("../img/bcg/header-bcg-golden_page-mob.webp");
+      background-size: cover;
+
+      .page-header__heading {
+        margin-bottom: 20px;
+        font-size: 30px;
       }
     }
   }
@@ -231,6 +254,18 @@
 }
 
 .page-header__next-btn {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28.635px;
+
+  &--white {
+    color: $basic-white;
+    border-color: $basic-white;
+
+    svg {
+      fill: $basic-white;
+    }
+  }
   @media (max-width: $tablet-width) {
     margin-bottom: 24px;
   }
