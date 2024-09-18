@@ -167,6 +167,12 @@
     background: transparent;
   }
 
+  &--honey {
+    flex-direction: row;
+    padding: 0;
+    background: transparent;
+  }
+
   @media (max-width: $tablet-width) {
     max-width: unset;
     min-height: 670px;
@@ -233,6 +239,11 @@
         right: 16px;
         width: 300px;
       }
+    }
+
+    &--honey {
+      padding: 0;
+      background: transparent;
     }
   }
 }
@@ -370,5 +381,77 @@
   @media (max-width: $tablet-width) {
     width: 261px;
     height: auto;
+  }
+}
+
+.page-header__honey {
+  display: flex;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.page-header__heney-item {
+  display: flex;
+  width: 25%;
+  padding: 60px 40px;
+  align-items: end;
+  justify-content: center;
+  background-color: #471909;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:nth-child(even) {
+    background-color: #f7ca50;
+  }
+
+  &:nth-child(1) {
+    background-image: url("../img/img/honey/honey1.webp");
+  }
+  &:nth-child(2) {
+    background-image: url("../img/img/honey/honey2.webp");
+  }
+  &:nth-child(3) {
+    background-image: url("../img/img/honey/honey3.webp");
+  }
+  &:nth-child(4) {
+    background-image: url("../img/img/honey/honey4.webp");
+  }
+
+  h2 {
+    color: #FFF;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.635px;
+  }
+
+  @media (max-width: $tablet-width) {
+    height: 165px;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: start;
+
+    &:nth-child(1) {
+      background-image: url("../img/img/honey/honey1-mob.webp");
+    }
+    &:nth-child(2) {
+      background-image: url("../img/img/honey/honey2-mob.webp");
+    }
+    &:nth-child(3) {
+      background-image: url("../img/img/honey/honey3-mob.webp");
+    }
+    &:nth-child(4) {
+      justify-content: end;
+      background-image: url("../img/img/honey/honey4-mob.webp");
+    }
+
+    h2 {
+      width: 125px;
+      font-size: 18px;
+      line-height: 20.263px;
+    }
   }
 }
