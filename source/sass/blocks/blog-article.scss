@@ -1,0 +1,142 @@
+.blog-article {
+  display: grid;
+  grid-template-columns: 473px 1fr 182px;
+  gap: 40px;
+  margin: 100px 0;
+  margin-left: 40px;
+  padding: 0px 48px 70px 48px;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    margin: 40px 0;
+    padding: 0;
+  }
+}
+
+.blog-article__main-img-wrapper {
+  min-width: 473px;
+
+  @media (max-width: $tablet-width) {
+    min-width: unset;
+    width: 100vw;
+    height: 170px;
+  }
+}
+
+.blog-article__main-img {
+  @media (max-width: $tablet-width) {
+    min-width: unset;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.blog-article__img-wrapper {
+  min-width: 182px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: row;
+    gap: unset;
+    justify-content: space-between;
+  }
+}
+
+.blog-article__img {
+  @media (max-width: $tablet-width) {
+    max-width: 50%;
+  }
+}
+
+.blog-article__heading{
+  margin-bottom: 25px;
+}
+
+.blog-article__text {
+  p {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+   padding: 0 16px;
+  }
+}
+
+.blog-article__next {
+  overflow-x: scroll;
+  margin-left: 130px;
+
+  .blog__list {
+    width: fit-content;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .card {
+    width: 545px;
+  }
+
+  @media (max-width: $tablet-width) {
+    overflow-x: unset;
+    margin-left: 0;
+    padding: 0 16px;
+
+    .blog__list {
+      width: 100%;
+      flex-wrap: unset;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+     .card {
+      width: 100%;
+    }
+
+    .card__bcg {
+      max-height: 210px;
+    }
+   }
+}
+
+.blog-article__footer {
+  width: 100%;
+  height: 720px;
+  position: relative;
+  margin-top: 140px;
+  background-color: #5b3627;
+
+  .heading {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 300px;
+    text-align: center;
+    color: $basic-white;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 60px;
+    height: 635px;
+
+    .heading {
+      padding: 0 16px;
+      font-size: 33.733px;
+      font-weight: 400;
+      line-height: 56.221px;
+      letter-spacing: 0.703px;
+    }
+  }
+}
+
+.blog-article__footer-img {
+  width: 100%;
+  height: 100%;
+}
