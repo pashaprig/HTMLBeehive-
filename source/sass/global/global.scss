@@ -84,6 +84,15 @@ img {
     padding: 0;
     border: unset;
   }
+
+  &--white {
+    border-color: white;
+    color: white;
+
+    svg {
+      fill: white;
+    }
+  }
 }
 
 button {

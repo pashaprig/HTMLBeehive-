@@ -5,9 +5,13 @@
   margin: 190px 0;
 
   @media (max-width: $tablet-width) {
-    gap: 70px;
+    gap: 100px;
     margin: 60px 0;
   }
+}
+
+.honey__wrapper {
+  display: flex;
 }
 
 .honey__heading {
@@ -100,9 +104,15 @@
   }
 }
 
+// Basis
+
 .honey__basis {
   display: flex;
   align-items: center;
+
+  .honey__heading {
+    margin-bottom: 30px;
+  }
 
   @media (max-width: $tablet-width) {
     position: relative;
@@ -124,19 +134,17 @@
       height: 380px;
     }
   }
-}
 
-.honey__wrapper {
-  display: flex;
-
-  @media (max-width: $tablet-width) {
-    order: 2;
-    align-items: center;
-
-    .honey__img {
+  .honey__wrapper {
+    @media (max-width: $tablet-width) {
       order: 2;
-      width: 178px;
-      height: 293px;
+      align-items: center;
+
+      .honey__img {
+        order: 2;
+        width: 178px;
+        height: 293px;
+      }
     }
   }
 }
@@ -144,15 +152,112 @@
 .honey__wrapper-text {
   display: flex;
   flex-direction: column;
-  gap: 40px;
   padding: 0 58px;
 
   .btn {
+    margin-top: 30px;
     width: 100%;
   }
 
   @media (max-width: $tablet-width) {
-    gap: 0;
     padding: 0;
   }
+}
+
+// Most
+
+.honey__most {
+  .honey__heading {
+    margin-bottom: 100px;
+    margin-left: 518px;
+  }
+
+  .honey__text {
+    width: 564px;
+    margin-bottom: 45px;
+    margin-left: 225px;
+  }
+
+  @media (max-width: $tablet-width) {
+    .honey__heading {
+      width: 251px;
+      margin-bottom: 40px;
+      margin-left: 20px;
+      padding: 0 16px;
+    }
+
+    .honey__text {
+      width: unset;
+      margin-bottom: 30px;
+      margin-left: 60px;
+      padding: 0 16px;
+    }
+  }
+
+  .honey__wrapper {
+    @media (max-width: $tablet-width) {
+      flex-direction: column;
+    }
+  }
+
+  .honey__most-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-height: 720px;
+    width: 50%;
+    padding: 85px 65px;
+    color: white;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+
+    &:nth-child(1) {
+      background: #b28151 no-repeat url("../img/img/honey/honey8.webp") center/cover;
+    }
+    &:nth-child(2) {
+      background: lightgray no-repeat url("../img/img/honey/honey9.webp") center/cover;
+    }
+
+    @media (max-width: $tablet-width) {
+      min-height: 375px;
+      width: 100%;
+      padding: 30px;
+    }
+  }
+
+  .honey__most-heading {
+    font-weight: 600;
+    margin-bottom: 40px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 10px;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 39px;
+      letter-spacing: 0.401px;
+    }
+  }
+
+  .honey__most-text {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.33px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 10px;
+      font-size: 10px;
+      line-height: 11.109px;
+    }
+  }
+}
+
+
+// basis-section2
+
+.honey__basis-section2 {
+
 }
