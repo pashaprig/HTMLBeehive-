@@ -132,18 +132,18 @@ button {
 }
 
 .desktop-only {
-  display: flex !important;
+  display: flex;
 
   @media (max-width: $tablet-width) {
-    display: none !important;
+    display: none;
   }
 }
 
 .mobile-only {
-  display: none !important;
+  display: none;
 
   @media (max-width: $tablet-width) {
-    display: flex !important;
+    display: flex;
   }
 }
 
