@@ -55,6 +55,7 @@
     .card__wrapper {
       position: absolute;
       left: calc(100% + 16px);
+      width: 110px;
     }
   }
 
@@ -169,7 +170,7 @@
       .card__about {
         position: absolute;
         bottom: 0;
-        right: calc(-100% - 10px);
+        right: calc(-100%);
         max-width: 100%;
         padding-left: 15px;
         border-bottom: 1px solid #e3c7bf;

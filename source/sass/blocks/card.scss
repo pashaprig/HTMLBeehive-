@@ -34,6 +34,7 @@
   display: flex;
   flex-direction: column;
   height: 400px;
+  padding: 5px;
   background: #f7ca50;
 
   &--blog {
@@ -48,7 +49,6 @@
 .card__info {
   position: absolute;
   display: flex;
-  align-items: center;
   gap: 20px;
   padding: 2px 20px;
 }
