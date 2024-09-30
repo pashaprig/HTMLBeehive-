@@ -1,0 +1,12 @@
+.images-square {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images-square__img {
+  @media (max-width: $tablet-width) {
+    height: 100vw;
+    width: 100vw;
+  }
+
+}

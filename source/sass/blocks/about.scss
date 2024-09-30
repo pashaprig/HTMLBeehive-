@@ -11,6 +11,17 @@
   }
 }
 
+.about__nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  margin: 100px 80PX;
+  font-size: 17.577px;
+  font-weight: 500;
+  line-height: 28.635px;
+}
+
 .article-text {
   font-size: 17.577px;
   font-style: normal;
