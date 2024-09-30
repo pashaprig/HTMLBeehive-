@@ -67,9 +67,10 @@
 
   &:nth-of-type(5) {
     width: 37%;
-    right: calc(25.8% + 20px);
+    right: calc(27.8% + 20px);
     bottom: 0;
     max-height: 380px;
+    margin-bottom: 0;
   }
 
   .card__wrapper {

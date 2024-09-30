@@ -47,7 +47,7 @@
 
 .products__goods {
   display: flex;
-  gap: 85px;
+  justify-content: space-between;
   margin-top: 120px;
 
   @media (max-width: $tablet-width) {
