@@ -276,11 +276,32 @@
 // Basis-section2
 
 .honey__basis-section2 {
+
+  .honey__heading {
+    &.desktop-only {
+      display: block;
+
+      @media (max-width: $tablet-width) {
+        display: none;
+      }
+    }
+
+    &.mobile-only {
+      display: none;
+
+      @media (max-width: $tablet-width) {
+        display: block;
+      }
+    }
+
+  }
+
+
   @media (max-width: $tablet-width) {
     gap: 30px;
 
     .honey__heading {
-      display: block !important;
+      display: block;
       right: unset;
       left: 170px;
       width: 200px;
