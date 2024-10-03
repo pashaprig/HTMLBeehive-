@@ -4,6 +4,10 @@
   margin-top: 100px;
   padding-right: 0;
 
+  .btn--small {
+    margin-top: 70px;
+  }
+
   @media (max-width: $tablet-width) {
     width: 100%;
     margin-top: 80px;
