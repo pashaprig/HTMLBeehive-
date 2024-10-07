@@ -8,6 +8,10 @@
 
 .special__heading {
   margin-bottom: 30px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 16px;
+  }
 }
 
 .special__list {

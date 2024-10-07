@@ -179,7 +179,8 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 20px;
-    background: url(../img/img/about/girl.webp) lightgray -204px -148px / 208.8% 123.307% no-repeat;
+    background: url(../img/img/about/girl-mob.webp) lightgray 50% no-repeat;
+    background-size: cover;
   }
 }
 
@@ -326,11 +327,14 @@
 // Technology
 
 .technology {
-  justify-content: end;
+  margin-left: 246px;
+  padding-left: 130px;
 
   @media (max-width: $tablet-width) {
     gap: 40px;
     flex-direction: column;
+    margin-left: 0;
+    padding-left: 0;
   }
 }
 
@@ -373,8 +377,8 @@
   flex-direction: column;
   justify-content: end;
   gap: 30px;
-  max-width: 360px;
-  padding-left: 50px;
+  max-width: 450px;
+  padding: 0 50px;
 
   @media (max-width: $tablet-width) {
     padding: 0 16px;
