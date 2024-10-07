@@ -30,13 +30,21 @@
   }
 }
 
+.card__pcice {
+  min-width: 45px;
+  text-align: right;
+}
+
 .card__bcg {
   position: relative;
   display: flex;
   flex-direction: column;
   height: 400px;
-  padding: 5px;
   background: #f7ca50;
+
+  a:not(.card__like) {
+    height: 100%;
+  }
 
   &--blog {
     height: 207px;
@@ -49,6 +57,7 @@
 
 .card__info {
   position: absolute;
+  top: 25px;
   display: flex;
   gap: 20px;
   padding: 2px 20px;

@@ -2,16 +2,8 @@
   margin-bottom: 120px;
   padding-left: 130px;
 
-  .btn {
-    margin-top: auto;
-  }
-
   @media (max-width: $tablet-width) {
     padding: 0 16px;
-
-    .btn {
-      margin-top: 10px;
-    }
   }
 }
 
