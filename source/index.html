@@ -40,31 +40,15 @@
       <img width="121" height="83" class="slide-panel__logo" src="img/img/logo.webp" alt="Логотип">
       </a>
       <div class="slide-panel__nav">
-
-        <form class="form form--nav" action="#" method="post">
-          <h2 class="form__heading">Залишився останній крок — створіть пароль</h2>
-          <p class="form__policy">Майже готово! Вам залишилося лише встановити пароль для завершення реєстрації.</p>
-          <input class="form__input" type="password" name="password" placeholder="пароль">
-          <input class="form__input" type="password" name="password" placeholder="Підтвердження пароля">
-          <label class="check option">
-            <input class="check__input" type="checkbox" name="subscribe" checked>
-            <span class="check__box"></span>
-            Так, Beehive Cosmetics! Надсилайте мені ваші новини
-          </label>
-          <button class="btn form__submit form__submit--white" type="submit">
-            СТВОРИТИ акаунт
-            <svg width="20" height="15">
-              <use xlink:href="img/sprite.svg#arrowright"></use>
-            </svg>
-          </button>
-          <p class="form__policy">Реєструючись, я погоджуюсь отримувати електронні листи від Beehive Cosmetics. Я
-            прочитав(ла) та погоджуюсь з <a href="#">Умовами та Політикою конфіденційності</a> Beehive Cosmetics.</p>
-        </form>
-
         <form class="form form--nav" action="#" method="post">
           <h2 class="form__heading">УВІЙТИ</h2>
           <input class="form__input" type="email" name="email" placeholder="email">
-          <input class="form__input" type="password" name="password" placeholder="пароль">
+          <div class="form__password-wrapper">
+            <input class="form__input" type="password" name="password" placeholder="пароль" id="password">
+            <button type="button" class="form__toggle-password">
+              <img src="img/icons/passwordHide.svg" width="24" height="24" alt="Toggle Password Visibility">
+            </button>
+          </div>
           <button class="btn form__submit form__submit--white" type="submit">
             УВІЙТИ
             <svg width="20" height="15">
@@ -94,7 +78,12 @@
           <h2 class="form__heading">СТВОРИТИ акаунт</h2>
           <input class="form__input" type="text" name="name" placeholder="ваше Ім'я та прізвище">
           <input class="form__input" type="email" name="email" placeholder="email">
-          <input class="form__input" type="password" name="password" placeholder="пароль">
+          <div class="form__password-wrapper">
+            <input class="form__input" type="password" name="password" placeholder="пароль" id="password">
+            <button type="button" class="form__toggle-password">
+              <img src="img/icons/passwordHide.svg" width="24" height="24" alt="Toggle Password Visibility">
+            </button>
+          </div>
           <label class="check option">
             <input class="check__input" type="checkbox" name="subscribe" checked>
             <span class="check__box"></span>
@@ -113,14 +102,45 @@
         <form class="form form--nav" action="#" method="post">
           <h2 class="form__heading">Підтвердіть електронну адресу для успішної реєстрації</h2>
           <input class="form__input" type="email" name="email" placeholder="email">
-          <p class="form__policy">Для продовження реєстрації перевірте, чи вказана електронна адреса вірна, або введіть іншу адресу.</p>
+          <p class="form__policy">Для продовження реєстрації перевірте, чи вказана електронна адреса вірна, або введіть
+            іншу адресу.</p>
           <button class="btn form__submit form__submit--white" type="submit">
             Надіслати підтвердження
             <svg width="20" height="15">
               <use xlink:href="img/sprite.svg#arrowright"></use>
             </svg>
           </button>
-          <p class="form__policy">На вашу електронну пошту надійде лист із посиланням для підтвердження. Перейдіть за посиланням для завершення реєстрації.</p>
+          <p class="form__policy">На вашу електронну пошту надійде лист із посиланням для підтвердження. Перейдіть за
+            посиланням для завершення реєстрації.</p>
+        </form>
+
+        <form class="form form--nav" action="#" method="post">
+          <h2 class="form__heading">Залишився останній крок — створіть пароль</h2>
+          <p class="form__policy">Майже готово! Вам залишилося лише встановити пароль для завершення реєстрації.</p>
+          <div class="form__password-wrapper">
+            <input class="form__input" type="password" name="password" placeholder="пароль" id="password">
+            <button type="button" class="form__toggle-password">
+              <img src="img/icons/passwordHide.svg" width="24" height="24" alt="Toggle Password Visibility">
+            </button>
+          </div>          <div class="form__password-wrapper">
+            <input class="form__input" type="password" name="passwordConfirm" placeholder="Підтвердження пароля" id="password">
+            <button type="button" class="form__toggle-password">
+              <img src="img/icons/passwordHide.svg" width="24" height="24" alt="Toggle Password Visibility">
+            </button>
+          </div>
+          <label class="check option">
+            <input class="check__input" type="checkbox" name="subscribe" checked>
+            <span class="check__box"></span>
+            Так, Beehive Cosmetics! Надсилайте мені ваші новини
+          </label>
+          <button class="btn form__submit form__submit--white" type="submit">
+            СТВОРИТИ акаунт
+            <svg width="20" height="15">
+              <use xlink:href="img/sprite.svg#arrowright"></use>
+            </svg>
+          </button>
+          <p class="form__policy">Реєструючись, я погоджуюсь отримувати електронні листи від Beehive Cosmetics. Я
+            прочитав(ла) та погоджуюсь з <a href="#">Умовами та Політикою конфіденційності</a> Beehive Cosmetics.</p>
         </form>
       </div>
     </div>

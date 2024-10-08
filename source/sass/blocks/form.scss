@@ -16,6 +16,7 @@
 }
 
 .form__input {
+  width: 100%;
   padding: 15px 0;
   text-transform: uppercase;
   font-family: "Inter", "Arial", sans-serif;
@@ -80,6 +81,26 @@
   line-height: 20.192px;
   text-transform: none;
   color: #191617;
+}
+
+.form__password-wrapper {
+  position: relative;
+}
+
+.form__toggle-password {
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 //CheckBox
