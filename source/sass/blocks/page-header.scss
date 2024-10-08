@@ -83,6 +83,10 @@
     width: 100%;
     padding: 2px 16px;
     background-color: white;
+
+    &.authorized {
+      top: 0;
+    }
   }
 }
 

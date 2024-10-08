@@ -42,6 +42,7 @@
   height: 400px;
   background: #f7ca50;
 
+
   a:not(.card__like) {
     height: 100%;
   }
@@ -52,6 +53,15 @@
 
   &--popup {
     height: 190px;
+  }
+
+  &:hover:not(.card__bcg--no-scale) {
+    overflow: hidden;
+
+    img {
+      scale: 1.1;
+      transition: scale 200ms ease-in-out;
+    }
   }
 }
 
@@ -83,11 +93,9 @@
 }
 
 .card__wrapper {
-  padding: 14px 10px;
   border-top: 1px solid #e3c7bf;
 
   &--blog {
-    padding: 0;
     border-top: 0;
   }
 }
