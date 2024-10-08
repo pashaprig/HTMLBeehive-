@@ -35,32 +35,93 @@
     </div>
   </div> -->
   <div class="page-container authorized">
-    <div class="slide-panel slide-panel--close" id="slidePanel">
+    <div class="slide-panel slide-panel--open" id="slidePanel">
       <a href="index.html"></a>
       <img width="121" height="83" class="slide-panel__logo" src="img/img/logo.webp" alt="Логотип">
-    </a>
+      </a>
       <div class="slide-panel__nav">
-        <h2 class="slide-panel__heading">догляд за Волоссям</h2>
-        <nav>
-          <ul class="slide-panel__list">
-            <li class="slide-panel__item">
-              <a href="honey.html" class="slide-panel__link">Чарівність меду</a>
-            </li>
-            <li class="slide-panel__item">
-              <a href="innovation.html" class="slide-panel__link">Інноваційні технології</a>
-            </li>
-            <li class="slide-panel__item">
-              <a href="about.html" class="slide-panel__link">ПРО нас</a>
-            </li>
-            <li class="slide-panel__item">
-              <a href="golden.html" class="slide-panel__link">Golden Routine</a>
-            </li>
-            <li class="slide-panel__item">
-              <a href="blog.html" class="slide-panel__link">БЛОГ</a>
-            </li>
-          </ul>
 
-        </nav>
+        <form class="form form--nav" action="#" method="post">
+          <h2 class="form__heading">Залишився останній крок — створіть пароль</h2>
+          <p class="form__policy">Майже готово! Вам залишилося лише встановити пароль для завершення реєстрації.</p>
+          <input class="form__input" type="password" name="password" placeholder="пароль">
+          <input class="form__input" type="password" name="password" placeholder="Підтвердження пароля">
+          <label class="check option">
+            <input class="check__input" type="checkbox" name="subscribe" checked>
+            <span class="check__box"></span>
+            Так, Beehive Cosmetics! Надсилайте мені ваші новини
+          </label>
+          <button class="btn form__submit form__submit--white" type="submit">
+            СТВОРИТИ акаунт
+            <svg width="20" height="15">
+              <use xlink:href="img/sprite.svg#arrowright"></use>
+            </svg>
+          </button>
+          <p class="form__policy">Реєструючись, я погоджуюсь отримувати електронні листи від Beehive Cosmetics. Я
+            прочитав(ла) та погоджуюсь з <a href="#">Умовами та Політикою конфіденційності</a> Beehive Cosmetics.</p>
+        </form>
+
+        <form class="form form--nav" action="#" method="post">
+          <h2 class="form__heading">УВІЙТИ</h2>
+          <input class="form__input" type="email" name="email" placeholder="email">
+          <input class="form__input" type="password" name="password" placeholder="пароль">
+          <button class="btn form__submit form__submit--white" type="submit">
+            УВІЙТИ
+            <svg width="20" height="15">
+              <use xlink:href="img/sprite.svg#arrowright"></use>
+            </svg>
+          </button>
+          <button class="btn form__forgot" type="button">Забули пароль?</button>
+        </form>
+
+        <form class="form form--nav" action="#" method="post">
+          <h3 class="form__sub-heading">Увійти за допомогою</h3>
+          <button class="btn form__cocial" type="button">
+            <svg width="30" height="30">
+              <use xlink:href="img/sprite.svg#google"></use>
+            </svg>
+            Google
+          </button>
+          <button class="btn form__cocial form__cocial--facebook" type="button">
+            <svg width="30" height="30">
+              <use xlink:href="img/sprite.svg#facebookColor"></use>
+            </svg>
+            Facebook
+          </button>
+        </form>
+
+        <form class="form form--nav" action="#" method="post">
+          <h2 class="form__heading">СТВОРИТИ акаунт</h2>
+          <input class="form__input" type="text" name="name" placeholder="ваше Ім'я та прізвище">
+          <input class="form__input" type="email" name="email" placeholder="email">
+          <input class="form__input" type="password" name="password" placeholder="пароль">
+          <label class="check option">
+            <input class="check__input" type="checkbox" name="subscribe" checked>
+            <span class="check__box"></span>
+            Так, Beehive Cosmetics! Надсилайте мені ваші новини
+          </label>
+          <button class="btn form__submit form__submit--white" type="submit">
+            створити
+            <svg width="20" height="15">
+              <use xlink:href="img/sprite.svg#arrowright"></use>
+            </svg>
+          </button>
+          <p class="form__policy">Реєструючись, я погоджуюсь отримувати електронні листи від Beehive Cosmetics. Я
+            прочитав(ла) та погоджуюсь з <a href="#">Умовами та Політикою конфіденційності</a> Beehive Cosmetics.</p>
+        </form>
+
+        <form class="form form--nav" action="#" method="post">
+          <h2 class="form__heading">Підтвердіть електронну адресу для успішної реєстрації</h2>
+          <input class="form__input" type="email" name="email" placeholder="email">
+          <p class="form__policy">Для продовження реєстрації перевірте, чи вказана електронна адреса вірна, або введіть іншу адресу.</p>
+          <button class="btn form__submit form__submit--white" type="submit">
+            Надіслати підтвердження
+            <svg width="20" height="15">
+              <use xlink:href="img/sprite.svg#arrowright"></use>
+            </svg>
+          </button>
+          <p class="form__policy">На вашу електронну пошту надійде лист із посиланням для підтвердження. Перейдіть за посиланням для завершення реєстрації.</p>
+        </form>
       </div>
     </div>
     <header class="page-header">
@@ -568,17 +629,7 @@
 
     <footer class="page-footer">
       <div class="subscribe">
-        <form class="form subscribe__form" action="#" method="post">
-          <input class="form__input" type="email" name="email" placeholder="Введіть свій email">
-          <p class="form__policy">Реєструючись, я погоджуюсь отримувати електронні листи від Beehive Cosmetics. Я
-            прочитав(ла) та погоджуюсь з <a href="#">Умовами та Політикою конфіденційності</a> Beehive Cosmetics.</p>
-          <label class="check option">
-            <input class="check__input" type="checkbox" name="subscribe" checked>
-            <span class="check__box"></span>
-            Так, Beehive Cosmetics! Надсилайте мені ваші новини
-          </label>
-          <button class="btn form__submit" type="submit">Підписатися</button>
-        </form>
+
         <ul class="social__list">
           <li class="social__item">
             <a href="http://">

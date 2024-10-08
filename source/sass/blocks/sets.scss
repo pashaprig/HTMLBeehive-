@@ -196,6 +196,10 @@
         width: 62%;
         border-top: 1px solid #e3c7bf;
       }
+
+      .card__img {
+        max-height: 330px;
+      }
     }
 
     &:nth-of-type(5) {

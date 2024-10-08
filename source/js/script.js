@@ -1,18 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const pageBody = document.querySelector('.page-body');
   const nav = document.querySelector('.main-nav');
   const toggleButton = document.querySelector('.main-nav__toggle');
   const slidePanel = document.getElementById('slidePanel');
 
-  // Функция для блокировки скролла колесом мыши и на сенсорных экранах
+  // Функция для блокировки скролла колесом мыши и на сенсорных экранах вне slidePanel
   function preventScroll(event) {
-    event.preventDefault();
+    if (!slidePanel.contains(event.target)) {
+      event.preventDefault();
+    }
   }
 
-  // Функция для блокировки прокрутки с клавиатуры
+  // Функция для блокировки прокрутки с клавиатуры вне slidePanel
   function preventScrollKeys(event) {
-    // Коды клавиш, которые управляют прокруткой
     const keys = ['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' '];
-    if (keys.includes(event.key)) {
+    if (keys.includes(event.key) && !slidePanel.contains(document.activeElement)) {
       event.preventDefault();
     }
   }
@@ -26,16 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const isOpen = slidePanel.classList.toggle('slide-panel--open');
 
     if (isOpen) {
-      // Запрещаем скролл страницы
-      window.addEventListener('wheel', preventScroll, { passive: false });
-      window.addEventListener('touchmove', preventScroll, { passive: false });
-      window.addEventListener('keydown', preventScrollKeys);
+      // Запрещаем скролл страницы, кроме slidePanel
+      pageBody.addEventListener('wheel', preventScroll, { passive: false });
+      pageBody.addEventListener('touchmove', preventScroll, { passive: false });
+      pageBody.addEventListener('keydown', preventScrollKeys);
       document.body.classList.add('hidden-scroll');
     } else {
       // Восстанавливаем возможность скролла
-      window.removeEventListener('wheel', preventScroll);
-      window.removeEventListener('touchmove', preventScroll);
-      window.removeEventListener('keydown', preventScrollKeys);
+      pageBody.removeEventListener('wheel', preventScroll);
+      pageBody.removeEventListener('touchmove', preventScroll);
+      pageBody.removeEventListener('keydown', preventScrollKeys);
       document.body.classList.remove('hidden-scroll');
     }
 
@@ -49,4 +51,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-
