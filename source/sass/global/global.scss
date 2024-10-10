@@ -36,7 +36,9 @@ ul {
 
 a {
   text-decoration: none;
+}
 
+a.btn {
   &:hover {
     opacity: 0.8;
   }

@@ -32,6 +32,12 @@
   color: #fff;
   background-color: $main-color;
 
+  a {
+    &:hover {
+      opacity: 1;
+    }
+  }
+
   &:nth-child(2),
   &:nth-child(3) {
     background-color: lightgray;
@@ -61,6 +67,7 @@
 
 .special__strong,
 .special__links {
+  position: relative;
   z-index: 1;
 }
 
@@ -74,6 +81,7 @@
   text-shadow:
     0px 4px 4px rgba(0, 0, 0, 0.25),
     0px 4px 20px rgba(0, 0, 0, 0.4);
+  color: white;
 
   @media (max-width: $tablet-width) {
     font-size: 31px;
@@ -84,40 +92,36 @@
 
 .special__links {
   display: flex;
+  align-items: center;
+  justify-content: end;
   width: 100%;
-  justify-content: space-between;
+  gap: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 1px;
 
-  a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 17px;
-    letter-spacing: 1px;
+  &:last-child {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
+  }
+
+  svg {
+    fill: $basic-white;
+  }
+
+  @media (max-width: $tablet-width) {
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
 
     &:last-child {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 29px;
-    }
-
-    svg {
-      fill: $basic-white;
-    }
-
-    @media (max-width: $tablet-width) {
-      gap: 5px;
       font-size: 12px;
       font-weight: 500;
       line-height: 15px;
-
-      &:last-child {
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 15px;
-      }
     }
   }
 }
