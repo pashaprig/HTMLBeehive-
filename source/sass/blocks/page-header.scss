@@ -38,6 +38,7 @@
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
+    min-height: unset;
   }
 }
 
@@ -196,7 +197,8 @@
     min-height: 670px;
     padding: 57px 30px;
     padding-bottom: 20px;
-    background: lightgray no-repeat url("../img/bcg/tubes-bcg-mob.webp");
+    background: lightgray no-repeat 50% url("../img/bcg/tubes-bcg-mob.webp");
+    background-size: cover;
 
     &--about {
       min-height: 392px;
