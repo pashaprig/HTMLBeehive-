@@ -4,6 +4,10 @@
   margin-top: 100px;
   padding-right: 0;
 
+  .swiper-scrollbar {
+    height: 10px !important;
+  }
+
   @media (max-width: $tablet-width) {
     width: 100%;
     margin-top: 80px;
@@ -15,7 +19,7 @@
 .products__wrapper {
   min-height: 627px;
   width: 100%;
-  max-width: 1060px;
+  max-width: 960px;
 
   @media (max-width: $tablet-width) {
     min-height: 200px;

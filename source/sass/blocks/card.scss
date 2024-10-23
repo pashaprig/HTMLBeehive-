@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 20px;
   width: 345px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   &--blog {
     gap: 10px;
@@ -103,6 +103,7 @@
 .card__pcice-wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   font-weight: 400;
   line-height: 26px;
 

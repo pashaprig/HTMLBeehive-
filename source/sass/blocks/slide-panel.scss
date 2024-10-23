@@ -19,20 +19,24 @@
   }
 }
 
+.slide-panel__wrapper {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .slide-panel--open {
   left: 0;
 }
 
 .slide-panel__logo {
   position: absolute;
-  top: 40px;
-  left: 70px;
-  margin-left: 45px;
+  top: -170px;
+  left: -100px;
 
   @media (max-width: $tablet-width) {
-    top: 0;
-    left: 16px;
-    margin-left: 0;
+    top: -100px;
+    left: 0;
     width: 77px;
     height: 46px;
   }
