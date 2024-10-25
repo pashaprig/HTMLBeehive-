@@ -40,7 +40,68 @@
       <img width="121" height="83" class="slide-panel__logo" src="img/img/logo.webp" alt="Логотип">
       </a>
       <div class="slide-panel__nav">
-        <form class="form form--nav" action="#" method="post">
+        <div class="user">
+          <div class="user__nav">
+            <ul class="user__nav-list">
+              <li class="user-nav__item active">Контактна інформація</li>
+              <li class="user-nav__item">Історія замовлень</li>
+              <li class="user-nav__item">Адресна книга</li>
+              <li class="user-nav__item">Мої особливості</li>
+              <li class="user-nav__item">Список бажань</li>
+            </ul>
+            <button class="btn form__logout desktop-only" type="button">Вихід</button>
+          </div>
+          <form class="form form--nav form--w100" action="#" method="post">
+            <h2 class="form__heading">Контактна інформація</h2>
+
+            <div class="form__inputs-blocks">
+              <div class="form__wrapper">
+                <label class="form__input-wrapper">
+                  Ваше Ім'я
+                  <input class="form__input" type="text" name="name" placeholder="Ім'я">
+                </label>
+                <label class="form__input-wrapper">
+                  Телефон
+                  <input class="form__input" type="text" name="phone" placeholder="+380 11 222 33 44">
+                </label>
+                <label class="form__input-wrapper">
+                  Дата народження
+                  <input class="form__input" type="text" name="birth" placeholder="24.08.1991">
+                </label>
+              </div>
+
+              <div class="form__wrapper">
+                <label class="form__input-wrapper">
+                  Ваше Прізвище
+                  <input class="form__input" type="text" name="last_name" placeholder="Прізвище">
+                </label>
+                <label class="form__input-wrapper">
+                  Телефон
+                  <input class="form__input" type="email" name="email" placeholder="user@exmpl.domain">
+                </label>
+                <div class="form__password-wrapper">
+                  <label class="form__input-wrapper">
+                    пароль
+                    <input class="form__input" type="password" name="password" placeholder="Пароль" id="password">
+                    <button type="button" class="form__toggle-password">
+                      <img src="img/icons/passwordHide.svg" width="24" height="24" alt="Toggle Password Visibility">
+                    </button>
+                  </label>
+                  <button class="btn form__forgot" type="button">Змінити пароль</button>
+                </div>
+              </div>
+            </div>
+            <div class="user__button-wrapper">
+              <button class="btn form__submit form__submit--white" type="submit">
+                Зберегти
+              </button>
+              <button class="btn form__logout mobile-only" type="button">Вихід</button>
+            </div>
+          </form>
+        </div>
+
+
+        <!-- <form class="form form--nav" action="#" method="post">
           <h2 class="form__heading">УВІЙТИ</h2>
           <input class="form__input" type="email" name="email" placeholder="Email">
           <div class="form__password-wrapper">
@@ -141,7 +202,7 @@
           </button>
           <p class="form__policy">Реєструючись, я погоджуюсь отримувати електронні листи від Beehive Cosmetics. Я
             прочитав(ла) та погоджуюсь з <a href="#">Умовами та Політикою конфіденційності</a> Beehive Cosmetics.</p>
-        </form>
+        </form> -->
       </div>
     </div>
     <header class="page-header">
@@ -471,9 +532,9 @@
         <ul class="special__list">
           <li class="special__item">
             <a href="#">
-            <img width="720" height="720" class="special__img" src="img/img/magic.webp" alt="magic">
-            <h3 class="special__strong">Чарівність меду</h3>
-            <div class="special__links">
+              <img width="720" height="720" class="special__img" src="img/img/magic.webp" alt="magic">
+              <h3 class="special__strong">Чарівність меду</h3>
+              <div class="special__links">
                 <span>Дізнатися більше</span>
                 <svg width="20" height="15">
                   <use xlink:href="img/sprite.svg#arrowright"></use>

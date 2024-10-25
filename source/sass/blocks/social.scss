@@ -1,7 +1,9 @@
 .social {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 40px;
+  margin: 40px 0;
 }
 
 .social__list {
