@@ -1,6 +1,10 @@
 .user {
   display: flex;
-  gap: 140px;
+  gap: 100px;
+
+  .form__toggle-password {
+    right: 0;
+  }
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
@@ -9,7 +13,7 @@
 }
 
 .user__nav {
-  min-width: 230px;
+  min-width: 200px;
 }
 
 .user__nav-list {
@@ -24,6 +28,12 @@
 }
 
 .user-nav__item {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
   &.active {
     text-decoration: underline;
   }
@@ -35,10 +45,13 @@
 
   .btn {
     margin-top: 0;
-    width: 50%;
   }
 
   @media (max-width: $tablet-width) {
     justify-content: space-between;
+
+    .btn {
+      width: 50%;
+    }
   }
 }
