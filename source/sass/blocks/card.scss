@@ -45,6 +45,7 @@
 
   a:not(.card__like) {
     height: 100%;
+    cursor: unset;
   }
 
   &--blog {
