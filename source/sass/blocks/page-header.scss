@@ -73,7 +73,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    z-index: 6;
+    z-index: 7;
     position: fixed;
     top: 41px;
     display: flex;
@@ -101,6 +101,7 @@
   }
 
   @media (max-width: $tablet-width) {
+    z-index: 6;
     margin-bottom: 0;
   }
 }
