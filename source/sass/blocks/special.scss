@@ -20,6 +20,7 @@
 }
 
 .special__item {
+  overflow: hidden;
   position: relative;
   box-sizing: border-box;
   display: flex;
@@ -31,6 +32,23 @@
   padding: 0 85px 40px 85px;
   color: #fff;
   background-color: $main-color;
+
+  &:hover {
+    img {
+      scale: 1.1;
+      transition: scale 500ms ease-in-out;
+    }
+
+    .special__about {
+      max-height: 200px;
+      transition: max-height 500ms ease-in-out;
+    }
+  }
+
+  img {
+    scale: 1;
+    transition: scale 500ms ease-in-out;
+  }
 
   a {
     &:hover {
@@ -66,13 +84,13 @@
 }
 
 .special__strong,
-.special__links {
+.special__links,
+.special__about {
   position: relative;
   z-index: 1;
 }
 
 .special__strong {
-  margin-bottom: 70px;
   font-size: 60px;
   font-weight: 500;
   line-height: 75px;
@@ -90,12 +108,30 @@
   }
 }
 
+.special__about {
+  overflow: hidden;
+  max-height: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 20px rgba(0, 0, 0, 0.40);
+  font-size: 21.281px;
+  font-weight: 700;
+  line-height: 34.67px;
+  color: white;
+  transition: max-height 500ms ease-in-out;
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    line-height: normal;
+  }
+}
+
 .special__links {
   display: flex;
   align-items: center;
   justify-content: end;
+  gap: 40px;
   width: 100%;
-  gap: 30px;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -110,6 +146,14 @@
 
   svg {
     fill: $basic-white;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    color: white;
   }
 
   @media (max-width: $tablet-width) {

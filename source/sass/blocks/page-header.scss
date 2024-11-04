@@ -18,7 +18,7 @@
 }
 
 .page-header__action {
-  z-index: 5;
+  z-index: 6;
   width: 100vw;
   overflow: hidden;
   position: fixed;
@@ -53,6 +53,10 @@
   &--policy {
     min-height: unset;
     background: transparent;
+  }
+
+  &--honey {
+    min-height: 590px;
   }
 
   &--blog {
@@ -417,12 +421,23 @@
 .page-header__heney-item {
   display: flex;
   width: 25%;
-  padding: 60px 40px;
+  padding: 60px 42px;
   align-items: end;
   justify-content: center;
   background-color: #471909;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: width 300ms ease-in-out;
+
+  &.active {
+    width: 34%;
+    transition: width 300ms ease-in-out;
+  }
+
+  &.not-active {
+    width: 22%;
+    transition: width 300ms ease-in-out;
+  }
 
   &:nth-child(even) {
     background-color: #f7ca50;
