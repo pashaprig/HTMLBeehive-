@@ -19,7 +19,7 @@
 .products__wrapper {
   min-height: 627px;
   width: 100%;
-  max-width: 960px;
+  max-width: calc(100% - 240px);
 
   @media (max-width: $tablet-width) {
     min-height: 200px;
