@@ -412,26 +412,109 @@
 .founders__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 160px;
   justify-content: center;
 
   @media (max-width: $tablet-width) {
     padding: 0 16px;
-    gap: 20px;
+    gap: 40px;
   }
 }
 
 .founders__item {
   display: flex;
   flex-direction: column;
+  justify-content: end;
+  gap: 16px;
+
+  &:first-child {
+    margin-right: 80px;
+  }
+
+  &:last-child {
+    margin-left: 80px;
+  }
+
+  &.active {
+    gap: 0;
+
+    .founders__name {
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+      transition: all 500ms ease-in-out;
+    }
+
+    img {
+      width: 100%;
+      min-height: 546px;
+      transition: min-height 500ms ease-in-out;
+    }
+  }
+
+  &.not-active {
+    .founders__name {
+      font-size: 20.178px;
+      line-height: 27.267px;
+      letter-spacing: 0.261px;
+      transition: all 500ms ease-in-out;
+    }
+
+    img {
+      max-width: 217px;
+      max-height: 322px;
+      min-height: unset;
+      transition: max-height 500ms ease-in-out;
+    }
+  }
+
+  img {
+    width: 100%;
+    min-height: 493px;
+    transition: min-height 500ms ease-in-out;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 100%;
+    width: 100%;
+
+    &:first-child {
+      justify-content: start;
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-left: 0;
+      img {
+        order: 2;
+      }
+    }
+
+    img {
+      width: 46%;
+      min-height: unset;
+      max-height: 240px;
+    }
+  }
+}
+
+.founders__img-wrapper {
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 
   @media (max-width: $tablet-width) {
-    max-width: 46%;
-    img {
-      width: 100%;
-      max-height: 240px;
-    }
+    flex-direction: row;
+  }
+}
+
+.founders__text-wrapper {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 18px;
+    font-size: 12px;
+    line-height: 20px;
   }
 }
 
@@ -442,6 +525,8 @@
   font-weight: 400;
   line-height: 41.7px;
   letter-spacing: 0.4px;
+  opacity: 1;
+  transition: all 500ms ease-in-out;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;

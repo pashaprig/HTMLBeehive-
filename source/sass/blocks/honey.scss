@@ -689,7 +689,7 @@
   display: flex;
   align-items: center;
   height: 460px;
-  width: 33%;
+  width: 33.3333%;
   padding: 20px;
   background: lightgrey;
 
@@ -747,6 +747,10 @@
     height: 405px;
     width: 100%;
     padding: 10px;
+
+    h3 {
+      font-size: 32px;
+    }
   }
 }
 
