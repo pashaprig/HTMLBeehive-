@@ -8,9 +8,7 @@
 }
 
 .sets__heading {
-  @media (max-width: $tablet-width) {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
 }
 
 .sets__list {
@@ -32,7 +30,7 @@
   }
 
   &:nth-of-type(1) {
-    top: 80px;
+    top: 90px;
     width: 31%;
   }
 
@@ -43,7 +41,7 @@
 
     .card__wrapper {
       position: absolute;
-      left: calc(-100% + 16px);
+      left: calc(-100% + 50px);
     }
   }
 
@@ -55,13 +53,13 @@
     .card__wrapper {
       position: absolute;
       left: calc(100% + 16px);
-      width: 110px;
+      width: 190px;
     }
   }
 
   &:nth-of-type(4) {
     width: 25.8%;
-    top: 80px;
+    top: 130px;
     right: 0;
   }
 
@@ -117,6 +115,7 @@
       .card__wrapper {
         position: absolute;
         top: unset;
+        left: 10px;
         bottom: 0;
         border: none;
       }
@@ -143,15 +142,16 @@
       .card__wrapper {
         position: absolute;
         left: unset;
-        right: 0;
+        right: 10px;
         border: none;
       }
 
       .card__about {
         position: absolute;
-        left: calc(-100% + 2px);
+        left: calc(-100% - 20px);
         border-top: 1px solid #e3c7bf;
         padding-right: 15px;
+        max-width: 200px;
       }
     }
 
@@ -159,13 +159,14 @@
       width: calc(50% - 10px);
       left: 0;
       top: 530px;
-      max-height: 220px;
+      height: 220px;
 
       .card__wrapper {
         position: absolute;
         top: 0;
         left: 10px;
         border: none;
+        width: 140px;
       }
 
       .card__about {
@@ -181,6 +182,7 @@
     &:nth-of-type(4) {
       top: 760px;
       width: 60%;
+      height: 330px;
 
       .card__wrapper {
         position: absolute;
