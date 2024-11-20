@@ -138,10 +138,6 @@
   color: #191617;
 }
 
-.form__password-wrapper {
-  position: relative;
-}
-
 .form__toggle-password {
   position: absolute;
   top: 50%;
@@ -194,7 +190,12 @@
 }
 
 .form__input-wrapper {
+  position: relative;
   color: #9D9D9D;
+
+  .react-datepicker-wrapper {
+    width: 100% !important;
+  }
 
   input {
     height: 37px;
