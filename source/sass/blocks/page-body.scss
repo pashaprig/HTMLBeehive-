@@ -26,9 +26,13 @@
 
   &.authorized {
     margin-top: 0;
+  }
 
-    .main-nav {
-      top: 0;
+  @media (max-width: $tablet-width) {
+    &.authorized {
+      .main-nav {
+        top: 0;
+      }
     }
   }
 }

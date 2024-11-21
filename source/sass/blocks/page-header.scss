@@ -4,8 +4,19 @@
   flex-direction: column;
   text-shadow: 0px 4px 20px rgba(255, 255, 255, 0.4);
 
-  @media (max-width: $tablet-width) {
+  &--catalog {
+    height: 500px;
+    background: #f7ca50 no-repeat 50% url("../img/bcg/header-bcg-catalog_page.webp");
+    background-size: cover;
+  }
 
+  @media (max-width: $tablet-width) {
+    &--catalog {
+      margin-top: 41px;
+      height: 200px;
+      background: #f7ca50 no-repeat 50% url("../img/bcg/header-bcg-catalog_page-mob.webp");
+      background-size: cover;
+    }
   }
 }
 
@@ -80,6 +91,10 @@
     background-size: cover;
   }
 
+  &--catalog {
+    background: 0;
+  }
+
   @media (max-width: $tablet-width) {
     z-index: 7;
     position: fixed;
@@ -151,6 +166,10 @@
     }
   }
 
+  &--catalog {
+    display: none;
+  }
+
   &--about {
     justify-content: space-around;
     max-width: 50%;
@@ -158,7 +177,6 @@
     padding-right: 40px;
     padding-left: 70px;
     background: transparent;
-
 
     .page-header__text {
       font-weight: 300;
@@ -170,7 +188,6 @@
     max-width: 50%;
     padding: 0 90px;
     background: transparent;
-
 
     .page-header__text {
       font-weight: 300;
@@ -461,8 +478,8 @@
   }
 
   h2 {
-    color: #FFF;
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.40);
+    color: #fff;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
     font-size: 24px;
     font-weight: 600;
     line-height: 28.635px;
