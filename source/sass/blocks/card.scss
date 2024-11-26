@@ -10,13 +10,14 @@
   }
 
   &--popup {
-    gap: 8px;
+    gap: 10px;
     width: 167px;
-    font-size: 7.5px;
+    font-size: 9px;
+    margin-bottom: 0;
 
     .card__pcice-wrapper,
     .card__name {
-      line-height: 12.5px;
+      line-height: 1.5;
     }
   }
 
