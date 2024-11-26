@@ -13,6 +13,10 @@
   padding-left: 300px;
   transition: left 0.7s ease;
 
+  &--open {
+    left: 0;
+  }
+
   @media (max-width: $tablet-width) {
     padding: 16px;
     padding-top: 100px;
@@ -24,10 +28,6 @@
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
-}
-
-.slide-panel--open {
-  left: 0;
 }
 
 .slide-panel__logo {
