@@ -84,12 +84,17 @@
 
 .popup-products__close {
   position: absolute;
-  right: -5px;
-  top: -5px;
+  right: -35px;
+  top: -35px;
   width: 26px;
   height: 26px;
-  display: inline-block;
-  cursor: pointer;
+  padding: 5px;
+  border: 0;
+
+  @media (max-width: $tablet-width) {
+    right: 0;
+    top: -25px;
+  }
 }
 
 .popup-products__close::before,
