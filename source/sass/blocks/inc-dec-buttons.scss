@@ -1,0 +1,20 @@
+.inc-dec-buttons {
+  display: flex;
+  outline: 1px solid #c6c6c6;
+
+  button {
+    width: 30px;
+    padding: 5px;
+    font-size: 22px;
+    background: #f3f3f4;
+    border: 0;
+  }
+
+  input {
+    text-align: center;
+    justify-content: center;
+    width: 36px;
+    padding: 5px;
+    border: 0;
+  }
+}

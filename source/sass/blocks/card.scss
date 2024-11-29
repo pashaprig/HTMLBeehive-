@@ -94,6 +94,9 @@
 }
 
 .card__wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   border-top: 1px solid #e3c7bf;
 
   &--blog {
