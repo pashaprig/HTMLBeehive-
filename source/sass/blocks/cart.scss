@@ -1,0 +1,217 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart__heading {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.cart__wrapper {
+  display: flex;
+  gap: 60px;
+}
+
+.cart__steps-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart__step {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-info__heading {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cart-info__tabs {
+  display: flex;
+  gap: 20px;
+}
+
+.cart-info__tab {
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  border: 0;
+
+  &--active {
+    border: 1px solid #000;
+  }
+}
+
+.cart__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 355px;
+}
+
+// MINI CARD
+
+.cart__card {
+  display: flex;
+  gap: 20px;
+}
+
+.cart__card-img-wrapper {
+  position: relative;
+
+  span {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 44.932px;
+    border-radius: 50%;
+    background: #d4d6df;
+  }
+}
+
+.cart__card-name-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cart__card-name {
+  font-weight: 700;
+  line-height: 26.002px;
+}
+
+.cart__card-price-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+
+  min-width: 100px;
+}
+
+.cart__close-btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+}
+
+// PROMO-CODE
+
+.cart__code-form {
+  gap: 5px;
+
+  h3 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  input {
+    width: 50%;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: 1px solid #d4d6df;
+    background: #fff;
+  }
+
+  .btn {
+    width: 50%;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    background: #231f20;
+    border: 0;
+    text-transform: none;
+  }
+}
+
+.cart__code-form-wrapper {
+  display: flex;
+}
+
+// AMOUNT
+
+.cart__amount {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-transform: none;
+}
+
+.cart__amount-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26.32px;
+  }
+}
+
+.cart__btn-text {
+  color: #9d9d9d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+// PRICE
+
+.cart__price {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e3c7bf;
+
+  label {
+    display: flex;
+    gap: 10px;
+    text-transform: none;
+  }
+
+  .btn {
+    width: 100%;
+    color: white;
+    background: black;
+  }
+}
+
+.cart__price-wrapper {
+  span {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 33.19px;
+    letter-spacing: 0.933px;
+  }
+}
+
+.cart__checkbox {
+  accent-color: black;
+}

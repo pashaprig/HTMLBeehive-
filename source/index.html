@@ -35,12 +35,12 @@
     </div>
   </div> -->
   <div class="page-container authorized">
-    <div class="slide-panel slide-panel--close" id="slidePanel">
+    <div class="slide-panel slide-panel--open" id="slidePanel">
       <a href="index.html"></a>
       <img width="121" height="83" class="slide-panel__logo" src="img/img/logo.webp" alt="Логотип">
       </a>
       <div class="slide-panel__nav">
-        <div class="user">
+        <!-- <div class="user">
           <div class="user__nav">
             <ul class="user__nav-list">
               <li class="user-nav__item active">Контактна інформація</li>
@@ -98,6 +98,133 @@
               <button class="btn form__logout mobile-only" type="button">Вихід</button>
             </div>
           </form>
+        </div> -->
+
+        <div class="cart">
+          <h2 class="cart__heading heading">оформлення замовлення</h2>
+          <div class="cart__wrapper">
+            <div class="cart__steps-wrapper">
+              <div class="cart__step cart__step-1 cart__step-1--full ">
+                <h3 class="cart-info__heading">1. Контактна інформація</h3>
+                <div class="cart-info__tabs">
+                  <button class="btn cart-info__tab btn cart-info__tab--active" type="button">Я купую вперше</button>
+                  <button class="btn cart-info__tab" type="button">Я постійний клієнт </button>
+                </div>
+                <div class="cart-info__content">
+                  Register Form
+                </div>
+              </div>
+            </div>
+            <div class="cart__content">
+              <div class="cart__card">
+                <div class="cart__card-img-wrapper">
+                  <img class="cart__card" width="71" height="81" src="img/img/about.webp" alt="img">
+                  <span>1</span>
+                </div>
+                <div class="cart__card-name-wrapper">
+                  <span class="cart__card-type">Шампунь</span>
+                  <span class="cart__card-name">Keratin System </span>
+                  <div class="inc-dec-buttons inc-dec-buttons--cart">
+                    <button class="btn" type="button">
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Minus">
+                          <path id="Vector 14" d="M15.8833 11L5.8833 11" stroke="#9D9D9D" stroke-linecap="square" />
+                        </g>
+                      </svg>
+                    </button>
+                    <input type="text" value="1">
+                    <button class="btn" type="button">
+                      <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Plus">
+                          <path id="Vector 11" d="M10.8833 5V15" stroke="#9D9D9D" stroke-linecap="square" />
+                          <path id="Vector 12" d="M15.8833 10L5.8833 10" stroke="#9D9D9D" stroke-linecap="square" />
+                        </g>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="cart__card-price-wrapper">
+                  <span>₴650</span>
+                  <button type="button" class="btn cart__close-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+                      <g clip-path="url(#clip0_1098_18009)">
+                        <mask id="path-1-inside-1_1098_18009" fill="white">
+                          <path
+                            d="M3.23364 14.4297L17.5088 0.154545L18.5842 1.22992L4.30901 15.5051L3.23364 14.4297Z" />
+                        </mask>
+                        <path d="M17.5132 0.158931L3.23803 14.4341L5.38 16.576L19.6551 2.3009L17.5132 0.158931Z"
+                          fill="#9D9D9D" mask="url(#path-1-inside-1_1098_18009)" />
+                        <mask id="path-3-inside-2_1098_18009" fill="white">
+                          <path
+                            d="M4.30908 0.152344L18.5842 14.4275L17.5089 15.5029L3.23371 1.22772L4.30908 0.152344Z" />
+                        </mask>
+                        <path d="M18.5798 14.4319L4.3047 0.156729L2.16272 2.2987L16.4379 16.5738L18.5798 14.4319Z"
+                          fill="#9D9D9D" mask="url(#path-3-inside-2_1098_18009)" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1098_18009">
+                          <rect width="20.1821" height="15.6383" fill="white"
+                            transform="translate(0.818115 0.0117188)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <span class="visually-hidden">видалити товар</span>
+                  </button>
+                </div>
+              </div>
+              <form class="form cart__code-form" action="#" method="post">
+                <h3>Промокод</h3>
+                <div class="cart__code-form-wrapper">
+                  <input class="form__input" type="text" name="promo-code" placeholder="Код знижки">
+                  <button class="btn" type="submit" disabled>Застосувати</button>
+                </div>
+              </form>
+              <div class="cart__amount">
+                <div class="cart__amount-wrapper">
+                  <p>Сума замовлення</p>
+                  <span>650 ₴</span>
+                </div>
+                <div class="cart__amount-wrapper">
+                  <p>Вартість пакування</p>
+                  <span>100 ₴</span>
+                </div>
+
+                <div class="cart__amount-wrapper">
+                  <p class="cart__btn-text">Вибрати подарункове пакування</p>
+                  <button class="btn cart__close-btn" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                      width="22" height="23" viewBox="0 0 22 23" fill="none">
+                      <mask id="path-1-inside-1_1166_7174" fill="white">
+                        <path d="M10.1948 21.5781L10.1004 1.39025L11.6212 1.38313L11.7156 21.571L10.1948 21.5781Z" />
+                      </mask>
+                      <path d="M10.1066 1.39022L10.201 21.5781L13.2302 21.5639L13.1358 1.37605L10.1066 1.39022Z"
+                        fill="#9D9D9D" mask="url(#path-1-inside-1_1166_7174)" />
+                      <mask id="path-3-inside-2_1166_7174" fill="white">
+                        <path d="M0.80957 10.7695L20.9975 10.6751L21.0046 12.1959L0.816684 12.2903L0.80957 10.7695Z" />
+                      </mask>
+                      <path d="M20.9975 10.6813L0.809599 10.7757L0.823769 13.8049L21.0116 13.7105L20.9975 10.6813Z"
+                        fill="#9D9D9D" mask="url(#path-3-inside-2_1166_7174)" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="cart__price">
+                <div class="cart__amount-wrapper cart__price-wrapper">
+                  <p>До сплати</p>
+                  <span>₴550</span>
+                </div>
+                <form class="form" action="#" method="post">
+                  <button class="btn" type="submit">Оформити замовлення</button>
+                  <label>
+                    <input class="cart__checkbox" type="checkbox" name="" id="" checked>
+                    Підтверджую замовлення і погоджуюсь з правилами користування сайтом
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
         </div>
 
 
@@ -243,11 +370,12 @@
                 </button>
               </li>
               <li class="main-nav__item">
-                <button class="main-nav__btn" type="button">
+                <button class="main-nav__btn main-nav__btn-catr" type="button">
                   <span class="visually-hidden">Корзина</span>
                   <svg width="27" height="28">
                     <use xlink:href="img/sprite.svg#basket"></use>
                   </svg>
+                  <span class="main-nav__btn-amount">0</span>
                 </button>
               </li>
             </ul>

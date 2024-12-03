@@ -50,6 +50,19 @@
   }
 }
 
+.main-nav__btn-catr {
+  position: relative;
+}
+
+.main-nav__btn-amount {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  font-size: 17.3px;
+  font-weight: 700;
+  line-height: 17.33px;
+}
+
 .main-nav__favicon {
   margin-left: -2px;
 }

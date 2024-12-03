@@ -3,6 +3,7 @@
   outline: 1px solid #c6c6c6;
 
   button {
+    display: flex;
     width: 30px;
     padding: 5px;
     font-size: 22px;
@@ -16,5 +17,28 @@
     width: 36px;
     padding: 5px;
     border: 0;
+  }
+}
+
+.inc-dec-buttons--cart {
+  width: fit-content;
+
+  button {
+    background: 0;
+    border: 0;
+
+    &:hover {
+      path {
+        stroke: black;
+      }
+    }
+
+    input {
+      text-align: center;
+      justify-content: center;
+      width: 36px;
+      padding: 5px;
+      border: 0;
+    }
   }
 }

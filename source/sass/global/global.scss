@@ -81,6 +81,18 @@ img {
   background-color: transparent;
   border: 1px solid #000;
 
+
+  &:disabled {
+    color: white !important;
+    background: #d4d6df !important;
+    border-color: #d4d6df;
+
+    &:hover {
+      opacity: 1;
+      cursor: not-allowed;
+    }
+  }
+
   &--small {
     gap: 34px;
     padding: 0;
