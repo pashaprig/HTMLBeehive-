@@ -51,15 +51,15 @@
       margin-left: 0;
     }
   }
+}
 
-  .honey__text {
-    margin-right: 110px;
-    margin-left: 800px;
+.honey__text-top-wrapper {
+  max-width: 532px;
+  margin-right: 107px;
+  margin-left: auto;
 
-    @media (max-width: $tablet-width) {
-      margin-right: 0;
-      margin-left: 0;
-    }
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
   }
 }
 
@@ -70,7 +70,6 @@
   min-height: 635px;
   margin-top: 45px;
   padding-bottom: 100px;
-  padding-left: 800px;
   color: #fff;
   text-shadow:
     0px 4px 4px rgba(0, 0, 0, 0.25),
@@ -81,7 +80,7 @@
     min-height: 419px;
     margin-top: 20px;
     padding-bottom: 5px;
-    padding-left: 116px;
+    padding-right: 16px;
   }
 }
 
@@ -118,6 +117,11 @@
     margin-bottom: 30px;
   }
 
+  .honey__img {
+    max-width: 25%;
+    height: auto;
+  }
+
   @media (max-width: $tablet-width) {
     position: relative;
     flex-direction: column;
@@ -134,6 +138,7 @@
     }
 
     .honey__img {
+      max-width: 50%;
       width: 241px;
       height: 380px;
     }
@@ -235,7 +240,8 @@
     justify-content: end;
     min-height: 720px;
     width: 50%;
-    padding: 85px 65px;
+    padding: 85px 20px;
+    padding-left: 85px;
     color: white;
     text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
 
@@ -366,6 +372,11 @@
   gap: 40px;
   padding-left: 125px;
 
+  .honey__img {
+    max-width: 50%;
+    height: auto;
+  }
+
   .honey__wrapper {
     flex-direction: column;
   }
@@ -373,7 +384,7 @@
   .honey__heading {
     margin-top: 80px;
     margin-bottom: auto;
-    padding-left: 150px;
+    padding-left: 100px;
     text-align: right;
   }
 
@@ -567,14 +578,15 @@
   padding: 0;
   padding-left: 60px;
 
+  .honey__img {
+    max-width: 50%;
+    height: auto;
+  }
+
   .honey__heading {
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 500px;
-    padding: 0;
-    margin: 0;
-    text-align: left;
+    padding-left: 0;
+    margin-bottom: 30px;
   }
 
   @media (max-width: $tablet-width) {
@@ -588,9 +600,16 @@
     }
 
     .honey__heading {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      text-align: left;
       top: 67px;
       left: 53%;
       width: 47%;
+      margin-bottom: 0;
     }
   }
 }

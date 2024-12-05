@@ -65,11 +65,13 @@
 
 .mission {
   display: flex;
+  gap: 10px;
   padding-left: 130px;
   justify-content: space-between;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
+    gap: unset;
     padding-left: 0;
   }
 }
@@ -97,6 +99,10 @@
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 110px;
+
+  img {
+    max-width: calc(50% - 10px)
+  }
 
   @media (max-width: $tablet-width) {
     order: 2;
@@ -349,6 +355,11 @@
   position: relative;
 }
 
+.technology__img {
+  max-width: 100%;
+  height: auto;
+}
+
 .technology__heading {
   position: absolute;
   top: 90px;
@@ -490,6 +501,7 @@
     }
 
     img {
+      object-fit: contain;
       width: 46%;
       min-height: unset;
       max-height: 240px;

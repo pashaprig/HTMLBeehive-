@@ -1,0 +1,16 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Filter">
+<g id="HorizontalBorder">
+<mask id="path-1-inside-1_1196_21553" fill="white">
+<path d="M15.8882 10.9141L5.7999 21.0023L4.37989 19.5823L14.4682 9.49406L15.8882 10.9141Z"/>
+</mask>
+<path d="M5.44055 20.643L15.5288 10.5547L13.4075 8.4334L3.31923 18.5217L5.44055 20.643Z" fill="#231F20" mask="url(#path-1-inside-1_1196_21553)"/>
+</g>
+<g id="HorizontalBorder_2">
+<mask id="path-3-inside-2_1196_21553" fill="white">
+<path d="M23.23 21L13.1108 10.8809L14.5308 9.46085L24.65 19.58L23.23 21Z"/>
+</mask>
+<path d="M13.4702 10.5215L23.5893 20.6407L25.7106 18.5193L15.5915 8.40019L13.4702 10.5215Z" fill="#231F20" mask="url(#path-3-inside-2_1196_21553)"/>
+</g>
+</g>
+</svg>

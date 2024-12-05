@@ -10,7 +10,7 @@
   padding-top: 200px;
   padding-right: 80px;
   padding-bottom: 60px;
-  padding-left: 300px;
+  padding-left: 150px;
   transition: left 0.7s ease;
 
   &--open {
@@ -27,7 +27,12 @@
 .slide-panel__wrapper {
   position: relative;
   max-width: 1440px;
+  padding-left: 100px;
   margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .slide-panel__logo {

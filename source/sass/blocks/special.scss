@@ -8,9 +8,10 @@
 
 .special__heading {
   margin-bottom: 30px;
+  padding: 0 100px;
 
   @media (max-width: $tablet-width) {
-    padding-left: 16px;
+    padding: 0 16px;
   }
 }
 
@@ -29,7 +30,7 @@
   flex-grow: 1;
   max-width: 50%;
   height: 720px;
-  padding: 0 85px 40px 85px;
+  padding: 0 20px 40px 85px;
   color: #fff;
   background-color: $main-color;
 
