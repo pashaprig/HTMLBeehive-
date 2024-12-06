@@ -18,7 +18,7 @@
   flex-direction: column;
   justify-content: center;
   max-width: 50%;
-  padding: 60px 100px;
+  padding: 60px 80px;
 
   @media (max-width: $tablet-width) {
     max-width: unset;
@@ -54,6 +54,7 @@
 .innovations__img {
   max-width: 50%;
 
+
   @media (max-width: $tablet-width) {
     margin-left: -16px;
     max-width: unset;
@@ -65,22 +66,36 @@
 
 .innovations__img-wrapper {
   justify-content: space-between;
+  max-width: 50%;
 
-  &.desktop-only {
-    display: flex;
+  img {
+    max-width: 50%;
+    height: auto;
+  }
 
-    @media (max-width: $tablet-width) {
-      display: none;
+  @media (max-width: $tablet-width) {
+    max-width: unset;
+
+    img {
+      max-width: unset;
     }
   }
 
-  &.mobile-only {
-    display: none;
+  // &.desktop-only {
+  //   display: flex;
 
-    @media (max-width: $tablet-width) {
-      display: flex;
-    }
-  }
+  //   @media (max-width: $tablet-width) {
+  //     display: none;
+  //   }
+  // }
+
+  // &.mobile-only {
+  //   display: none;
+
+  //   @media (max-width: $tablet-width) {
+  //     display: flex;
+  //   }
+  // }
 }
 
 // block1
@@ -89,6 +104,11 @@
   display: flex;
   align-items: center;
   margin: 300px 0;
+
+  img {
+    max-width: 30%;
+    height: auto;
+  }
 
   .innovations__heading {
     z-index: 1;
@@ -105,6 +125,10 @@
     position: relative;
     margin: 0;
     margin-top: 100px;
+
+    img {
+      max-width: unset;
+    }
 
     .innovations__heading {
       position: absolute;
@@ -176,6 +200,7 @@
     .innovations__img-wrapper {
       gap: unset;
       justify-content: space-between;
+      max-width: unset;
       margin-bottom: 20px;
 
       img {
@@ -190,10 +215,11 @@
 
 .innovations__block4 {
   display: flex;
-  gap: 150px;
+  gap: 100px;
   padding-bottom: 5px;
 
   .main-img {
+    max-width: 50%;
     margin-bottom: 50px;
   }
 
@@ -206,6 +232,8 @@
   }
 
   .innovations__img-wrapper {
+    max-width: unset;
+    display: flex;
     justify-content: unset;
     justify-content: end;
     gap: 26px;
@@ -221,6 +249,7 @@
 
     .main-img {
       order: 2;
+      max-width: unset;
       width: 100vw;
       height: 100vw;
       margin-bottom: 35px;
