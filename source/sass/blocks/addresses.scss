@@ -1,0 +1,23 @@
+.addresses{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.addresses__heading{
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.addresses__about {
+  max-width: 420px;
+  font-weight: 400;
+  line-height: 20.2px;
+  color: #191617;
+  text-transform: none;
+
+  span {
+    font-weight: 700;
+  }
+}

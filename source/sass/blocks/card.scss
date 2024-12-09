@@ -32,7 +32,8 @@
 }
 
 .card__pcice {
-  min-width: 46px;
+  min-width: 55px;
+  text-align: right;
 }
 
 .card__bcg {
@@ -45,7 +46,6 @@
 
   a:not(.card__like) {
     height: 100%;
-    cursor: unset;
   }
 
   &--blog {
