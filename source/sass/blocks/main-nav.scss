@@ -44,9 +44,36 @@
   padding: 0;
   background: transparent;
   border: unset;
+  transition: all ease-in-out 500ms;
 
   svg {
     fill: none;
+  }
+
+  &--open {
+    svg {
+      opacity: 0;
+      transition: all ease-in-out 500ms;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 27px;
+      height: 3px;
+      background-color: #231F20;
+      transition: all ease-in-out 500ms;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
 }
 

@@ -19,6 +19,7 @@
 .sets__item {
   position: absolute;
   gap: 8px;
+  cursor: pointer;
 
   &:nth-of-type(1),
   &:nth-of-type(4),

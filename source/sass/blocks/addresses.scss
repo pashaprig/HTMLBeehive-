@@ -1,13 +1,23 @@
-.addresses{
+.addresses {
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  @media (max-width: $tablet-width) {
+    gap: 20px;
+  }
 }
 
-.addresses__heading{
+.addresses__heading {
   font-size: 25px;
   font-weight: 500;
   line-height: 25px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+  }
 }
 
 .addresses__about {
@@ -20,4 +30,111 @@
   span {
     font-weight: 700;
   }
+}
+
+.addresses__wrappers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.addresses__wrapper {
+  height: fit-content;
+  border-left: 1px solid black;
+
+  .addresses__list {
+    height: fit-content;
+  }
+
+  svg {
+    display: none;
+  }
+
+  &--close {
+    svg {
+      display: block;
+      transform: rotate(180deg);
+      transition: transform 500ms ease-in-out;
+    }
+
+    .addresses__list {
+      height: 242px;
+      overflow: hidden;
+    }
+  }
+
+  &--open {
+    svg {
+      display: block;
+      transform: rotate(0);
+      transition: transform 500ms ease-in-out;
+    }
+
+    .addresses__list {
+      overflow: unset;
+    }
+  }
+
+}
+
+.addresses__city {
+  width: fit-content;
+  padding: 8px 10px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -0.75px;
+  border: 1px solid black;
+  border-left: 0;
+
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+    letter-spacing: -0.6px;
+  }
+}
+
+.addresses__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.addresses__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 90%;
+  letter-spacing: -0.54px;
+
+  &:last-child {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -23px;
+      left: -23px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: black;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 12px;
+    letter-spacing: -0.36px;
+  }
+}
+
+.addresses__place {
+  font-weight: 700;
 }
