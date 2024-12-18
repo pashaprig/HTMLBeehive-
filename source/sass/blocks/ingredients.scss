@@ -131,3 +131,52 @@
     height: auto;
   }
 }
+
+.ingredients__reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  @media (max-width: $tablet-width) {
+    gap: 40px;
+  }
+}
+
+.ingredients__reviews-item {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+  line-height: 23.94px;
+  text-transform: none;
+  border-bottom: 1px solid #E3C7BF;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.ingredients__review-name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ingredients__author {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.983px;
+}
+
+.ingredients__reviews-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 66%;
+
+  @media (max-width: $tablet-width) {
+    gap: 10px;
+    max-width: unset;
+  }
+}

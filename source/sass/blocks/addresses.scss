@@ -36,7 +36,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
-  justify-content: space-between;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;

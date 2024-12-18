@@ -50,8 +50,13 @@
     fill: none;
   }
 
+  img {
+    opacity: 1;
+  }
+
   &--open {
-    svg {
+    svg,
+    img {
       opacity: 0;
       transition: all ease-in-out 500ms;
     }
