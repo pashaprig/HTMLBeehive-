@@ -69,6 +69,10 @@
     min-height: 590px;
   }
 
+  &--thank {
+    min-height: 490px;
+  }
+
   &--blog {
     min-height: unset;
     background: transparent;
@@ -230,6 +234,17 @@
     }
   }
 
+  &--thank {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    background: transparent;
+
+    .article__logo {
+      max-width: 50%;
+    }
+  }
+
   &--honey {
     flex-direction: row;
     padding: 0;
@@ -306,6 +321,21 @@
 
       .article__logo {
         max-width: unset;
+      }
+    }
+
+    &--thank {
+      min-height: unset;
+      margin-top: 20px;
+      padding: 0;
+      background: transparent;
+
+      .article__logo {
+        display: none;
+      }
+
+      .page-header__article {
+        text-align: left;
       }
     }
 

@@ -395,3 +395,27 @@
 .cart__comment {
   width: 100%;
 }
+
+.cart__pay-form {
+  input[type="submit"] {
+    width: 100%;
+    padding: 20px 40px;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Inter", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 22.67px;
+    background: #000;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.cart__quantity {
+  text-transform: lowercase;
+  height: 50px;
+  font-size: 14px;
+  color: lightgrey;
+}
