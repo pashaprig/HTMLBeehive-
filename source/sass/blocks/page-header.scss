@@ -251,6 +251,10 @@
     background: transparent;
   }
 
+  &--addresses {
+    display: none;
+  }
+
   @media (max-width: $tablet-width) {
     max-width: unset;
     min-height: 645px;

@@ -737,7 +737,7 @@
 
   h3 {
     margin-bottom: 20px;
-    font-size: 46px;
+    font-size: 38px;
     font-weight: 500;
     line-height: 60px;
     letter-spacing: 0.771px;
@@ -757,6 +757,7 @@
     }
 
     .honey__img {
+      opacity: 0.4;
       scale: 1.1;
       transition: scale 500ms ease-in-out;
     }
