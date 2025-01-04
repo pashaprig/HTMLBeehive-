@@ -156,16 +156,20 @@
   gap: 10px;
   margin-bottom: 40px;
 
-  .card {
-    width: calc(25% - 10px);
+  &--package {
+    .card {
+      width: calc(25% - 10px);
+    }
   }
+
 
   @media (max-width: $tablet-width) {
     margin-bottom: 20px;
-
-    .card {
-      width: calc(50% - 5px);
-      min-width: unset;
+    &--package {
+      .card {
+        width: calc(50% - 5px);
+        min-width: unset;
+      }
     }
   }
 }
