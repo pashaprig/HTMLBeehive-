@@ -49,7 +49,18 @@
 }
 
 .slide-panel__heading{
+  display: flex;
+  gap: 15px;
+  align-items: center;
   margin-bottom: 60px;
+  font-size: 19.802px;
+  font-weight: 600;
+  line-height: 33.19px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    font-weight: 700;
+  }
 }
 
 .slide-panel__list {

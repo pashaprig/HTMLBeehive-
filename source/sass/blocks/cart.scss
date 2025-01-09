@@ -405,7 +405,9 @@
     font-family: "Inter", "Arial", sans-serif;
     font-weight: 400;
     line-height: 22.67px;
+    text-transform: uppercase;
     background: #000;
+    border: 0;
 
     &:hover {
       opacity: 0.8;
