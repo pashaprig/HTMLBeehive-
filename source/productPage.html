@@ -342,11 +342,47 @@
         </div>
 
 
-        <div class="ingredients ingredients--">
+        <div class="ingredients reviews ingredients--open">
           <div class="ingredients__text-wrapper">
             <div class="ingredients__info-wrapper">
               <p class="ingredients__info">ВІДГУКИ(5)</p>
               <button type="button" class="btn ingredients__close-btn"></button>
+            </div>
+            <div class="reviews__statistic-wrapper">
+              <div class="reviews__raiting-wrapper">
+                <div class="reviews__raiting">
+                  <div class="reviews__raiting-star-wrapper">
+                    <svg width="31" height="30">
+                      <use xlink:href="img/sprite.svg#starFull"></use>
+                    </svg>
+                    <span class="reviews__raiting-number">4.8</span>
+                  </div>
+
+                  <div class="reviews__raiting-percent">
+                    <span>30 з 32 (98%)</span>
+                    <p>Клієнтів рекомендують цей продукт</p>
+                  </div>
+                </div>
+                <ul class="reviews__points-list">
+                  <li class="reviews__points-item">
+                    <div class="reviews__point-star-wrapper">
+                      <svg width="13" height="12">
+                        <use xlink:href="img/sprite.svg#starFull"></use>
+                      </svg>
+                      <span class="reviews__point">5</span>
+                    </div>
+                    <div class="reviews__points-progress">
+                      <span class="reviews__progres-status"></span>
+                    </div>
+                  </li>
+                <ul>
+              </div>
+              <div class="reviews__btn-wrapper">
+                <p>Поділіться своїми думками з іншими клієнтами</p>
+                <button class="btn form__submit" type="button">
+                  Залишити відгук
+                </button>
+              </div>
             </div>
             <ul class="ingredients__reviews-list">
               <li class="ingredients__reviews-item">
@@ -356,10 +392,12 @@
                 </div>
                 <div class="ingredients__reviews-text-wrapper">
                   <p>stars</p>
-                  <blockquote class="ingredients__reviews-text">Мила сьогодні голову і отримувала задоволення! Чудова якість. А
-                    потім вийшла на вулицю і на мене полетіли бджоли! Класна ідея для реклами) Серйозно, одразу дві бджоли
+                  <blockquote class="ingredients__reviews-text">Мила сьогодні голову і отримувала задоволення! Чудова
+                    якість. А
+                    потім вийшла на вулицю і на мене полетіли бджоли! Класна ідея для реклами) Серйозно, одразу дві
+                    бджоли
                     на голову сіли, а я тільки помила і пішла</blockquote>
-                  </div>
+                </div>
               </li>
               <li class="ingredients__reviews-item">
                 <div class="ingredients__review-name">
@@ -368,14 +406,20 @@
                 </div>
                 <div class="ingredients__reviews-text-wrapper">
                   <p>stars</p>
-                  <blockquote class="ingredients__reviews-text">Мила сьогодні голову і отримувала задоволення! Чудова якість. А
-                    потім вийшла на вулицю і на мене полетіли бджоли! Класна ідея для реклами Серйозно, одразу дві бджоли
-                    на голову сіли, а я тільки помила і пішлаМила сьогодні голову і отримувала задоволення! Чудова якість. А
-                    потім вийшла на вулицю і на мене полетіли бджоли! Класна ідея для реклами Серйозно, одразу дві бджоли
-                    на голову сіли, а я тільки помила і пішлаМила сьогодні голову і отримувала задоволення! Чудова якість. А
-                    потім вийшла на вулицю і на мене полетіли бджоли! Класна ідея для реклами Серйозно, одразу дві бджоли
+                  <blockquote class="ingredients__reviews-text">Мила сьогодні голову і отримувала задоволення! Чудова
+                    якість. А
+                    потім вийшла на вулицю і на мене полетіли бджоли! Класна ідея для реклами Серйозно, одразу дві
+                    бджоли
+                    на голову сіли, а я тільки помила і пішлаМила сьогодні голову і отримувала задоволення! Чудова
+                    якість. А
+                    потім вийшла на вулицю і на мене полетіли бджоли! Класна ідея для реклами Серйозно, одразу дві
+                    бджоли
+                    на голову сіли, а я тільки помила і пішлаМила сьогодні голову і отримувала задоволення! Чудова
+                    якість. А
+                    потім вийшла на вулицю і на мене полетіли бджоли! Класна ідея для реклами Серйозно, одразу дві
+                    бджоли
                     на голову сіли, а я тільки помила і пішла</blockquote>
-                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -413,80 +457,156 @@
           </div>
 
         </div> -->
-      </article>
-    </main>
 
-    <footer class="page-footer">
-      <div class="subscribe">
-        <form class="form subscribe__form" action="#" method="post">
-          <input class="form__input" type="email" name="email" placeholder="Введіть свій email">
-          <p class="form__policy">Реєструючись, я погоджуюсь отримувати електронні листи від Beehive Cosmetics. Я
-            прочитав(ла) та погоджуюсь з <a href="#">Умовами та Політикою конфіденційності</a> Beehive Cosmetics.</p>
-          <label class="check option">
-            <input class="check__input" type="checkbox" name="subscribe" checked>
-            <span class="check__box"></span>
-            Так, Beehive Cosmetics! Надсилайте мені ваші новини
-          </label>
-          <button class="btn form__submit" type="submit">Підписатися</button>
-        </form>
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="http://">
-              <svg width="30" height="30">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="http://">
-              <svg width="30" height="30">
-                <use xlink:href="img/sprite.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="http://">
-              <svg width="30" height="30">
-                <use xlink:href="img/sprite.svg#tiktok"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="links">
-        <nav class="page-footer__nav">
-          <div class="page-footer__nav-wrapper">
-            <div class="page-footer__links">
-              <p class="links__heading">ласкаво просимо до&nbsp;beehive&nbsp;cosmetics</p>
-              <ul class="page-footer__nav-list">
-                <li class="page-footer__nav-item"><a href="#"><a href="#">Мій аккаунт</a></li>
-                <li class="page-footer__nav-item"><a href="#">Про нас </a></li>
-                <li class="page-footer__nav-item"><a href="#">Блог</a></li>
-                <li class="page-footer__nav-item"><a href="#">Кар'єра</a></li>
-                <li class="page-footer__nav-item"><a href="#">FAQ</a></li>
-              </ul>
+        <!-- <div class="ingredients ingredients--open">
+          <div class="ingredients__text-wrapper">
+            <div class="ingredients__info-wrapper">
+              <p class="ingredients__info">Поділіться своїми враженнями</p>
+              <button type="button" class="btn ingredients__close-btn"></button>
             </div>
-            <div class="page-footer__links">
-              <p class="links__heading">взаємодія</p>
-              <ul class="page-footer__nav-list">
-                <li class="page-footer__nav-item"><a href="#">Доставка та оплата</a></li>
-                <li class="page-footer__nav-item"><a href="#">Повернення та обмін</a></li>
-                <li class="page-footer__nav-item"><a href="#">Політика конфіденційності</a></li>
-                <li class="page-footer__nav-item"><a href="#">Договір публічної оферти</a></li>
-                <li class="page-footer__nav-item"><a href="#">Site Map</a></li>
-              </ul>
-            </div>
+            <form action="#" class="form reviews__form">
+              <div class="reviews__inputs-wrapper">
+                <span class="reviews__label-text"> ОЦІНІТЬ ВАШ ДОСВІД, так ви допомогаєте нам стати краще для Вас</span>
+
+                <div class="reviews__star-wrapper">
+                  <label class="reviews__radio">
+                    <input class="reviews__radio-input" type="radio" name="stars" value="1" disabled>
+                    <span class="reviews__box"></span>
+                    <span class="visually-hidden">1</span>
+                  </label>
+
+                  <label class="reviews__radio">
+                    <input class="reviews__radio-input active" type="radio" name="stars" value="2">
+                    <span class="reviews__box"></span>
+                    <span class="visually-hidden"> 2</span>
+                  </label>
+
+                  <label class="reviews__radio">
+                    <input class="reviews__radio-input" type="radio" name="stars" value="3">
+                    <span class="reviews__box"></span>
+                    <span class="visually-hidden"> 3</span>
+                  </label>
+
+                  <label class="reviews__radio">
+                    <input class="reviews__radio-input" type="radio" name="stars" value="4">
+                    <span class="reviews__box"></span>
+                    <span class="visually-hidden"> 4</span>
+                  </label>
+
+                  <label class="reviews__radio">
+                    <input class="reviews__radio-input" type="radio" name="stars" value="5">
+                    <span class="reviews__box"></span>
+                    <span class="visually-hidden"> 5</span>
+                  </label>
+                </div>
+              </div>
+              <div class="reviews__inputs-wrapper">
+                <span class="reviews__label-text"> ОЦІНІТЬ ВАШ ДОСВІД, так ви допомогаєте нам стати краще для Вас</span>
+                <textarea rows="10" name="content" id=""></textarea>
+              </div>
+
+              <div class="reviews__inputs-wrapper">
+                <span class="reviews__label-text">ваші дані</span>
+                Login
+              </div>
+
+              <div class="reviews__inputs-wrapper">
+                <span class="reviews__label-text">Додати медіа (Опціонально)</span>
+                <label class="reviews__file-label">
+                  <input class="visually-hidden" type="file" name="images" multiple accept="image/*,video/*" />
+                  <span class="btn reviews__file-text">
+                    завантажити
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprite.svg#upload"></use>
+                    </svg>
+                  </span>
+                </label>
+                <span class="reviews__info">Завантажити до 10 зображень та 3 відео (макс. розмір файлу 200 МБ)</span>
+              </div>
+              <label class="check option">
+                <input class="check__input" type="checkbox" name="policy" checked>
+                <span class="check__box"></span>
+                Я погоджуюсь з Умовами та Положеннями
+              </label>
+              <button class="btn form__submit" type="submit">Надіслати</button>
+            </form>
+          </div> -->
+
+  </div>
+  </article>
+  </main>
+
+  <footer class="page-footer">
+    <div class="subscribe">
+      <form class="form subscribe__form" action="#" method="post">
+        <input class="form__input" type="email" name="email" placeholder="Введіть свій email">
+        <p class="form__policy">Реєструючись, я погоджуюсь отримувати електронні листи від Beehive Cosmetics. Я
+          прочитав(ла) та погоджуюсь з <a href="#">Умовами та Політикою конфіденційності</a> Beehive Cosmetics.</p>
+        <label class="check option">
+          <input class="check__input" type="checkbox" name="subscribe" checked>
+          <span class="check__box"></span>
+          Так, Beehive Cosmetics! Надсилайте мені ваші новини
+        </label>
+        <button class="btn form__submit" type="submit">Підписатися</button>
+      </form>
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="http://">
+            <svg width="30" height="30">
+              <use xlink:href="img/sprite.svg#instagram"></use>upload.svg
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="http://">
+            <svg width="30" height="30">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="http://">
+            <svg width="30" height="30">
+              <use xlink:href="img/sprite.svg#tiktok"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="links">
+      <nav class="page-footer__nav">
+        <div class="page-footer__nav-wrapper">
+          <div class="page-footer__links">
+            <p class="links__heading">ласкаво просимо до&nbsp;beehive&nbsp;cosmetics</p>
+            <ul class="page-footer__nav-list">
+              <li class="page-footer__nav-item"><a href="#"><a href="#">Мій аккаунт</a></li>
+              <li class="page-footer__nav-item"><a href="#">Про нас </a></li>
+              <li class="page-footer__nav-item"><a href="#">Блог</a></li>
+              <li class="page-footer__nav-item"><a href="#">Кар'єра</a></li>
+              <li class="page-footer__nav-item"><a href="#">FAQ</a></li>
+            </ul>
           </div>
-        </nav>
-        <div class="page-footer__contacts">
-          <p class="links__heading">Contact</p>
-          <p class="page-footer__nav-item">Напишіть нам</p>
-          <p class="page-footer__email"><a href="mailto:info@beehive-cosmetics.ua">info@beehive-cosmetics.ua</a></p>
+          <div class="page-footer__links">
+            <p class="links__heading">взаємодія</p>
+            <ul class="page-footer__nav-list">
+              <li class="page-footer__nav-item"><a href="#">Доставка та оплата</a></li>
+              <li class="page-footer__nav-item"><a href="#">Повернення та обмін</a></li>
+              <li class="page-footer__nav-item"><a href="#">Політика конфіденційності</a></li>
+              <li class="page-footer__nav-item"><a href="#">Договір публічної оферти</a></li>
+              <li class="page-footer__nav-item"><a href="#">Site Map</a></li>
+            </ul>
+          </div>
         </div>
-        <p class="page-footer__rights">© 2024 BEEHIVE COSMETICS | All Rights Reserved</p>
+      </nav>
+      <div class="page-footer__contacts">
+        <p class="links__heading">Contact</p>
+        <p class="page-footer__nav-item">Напишіть нам</p>
+        <p class="page-footer__email"><a href="mailto:info@beehive-cosmetics.ua">info@beehive-cosmetics.ua</a></p>
       </div>
-    </footer>
-    <script src="js/script.js"></script>
+      <p class="page-footer__rights">© 2024 BEEHIVE COSMETICS | All Rights Reserved</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
   </div>
 </body>
 

@@ -38,6 +38,22 @@
   line-height: 24px;
   letter-spacing: 2.667px;
   border-top: 1px solid #e3c7bf;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.ingredients__info {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.635px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+  }
 }
 
 .ingredients__close-btn {
@@ -149,7 +165,7 @@
   padding: 20px;
   line-height: 23.94px;
   text-transform: none;
-  border-bottom: 1px solid #E3C7BF;
+  border-bottom: 1px solid #e3c7bf;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;

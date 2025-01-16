@@ -69,7 +69,8 @@
     min-height: 590px;
   }
 
-  &--thank {
+  &--thank,
+  &--declined {
     min-height: 490px;
   }
 
@@ -234,7 +235,8 @@
     }
   }
 
-  &--thank {
+  &--thank,
+  &--declined {
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
@@ -328,7 +330,8 @@
       }
     }
 
-    &--thank {
+    &--thank,
+    &--declined {
       min-height: unset;
       margin-top: 20px;
       padding: 0;

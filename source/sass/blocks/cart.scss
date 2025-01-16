@@ -97,6 +97,14 @@
       display: none;
     }
   }
+
+  @media (max-width: $tablet-width) {
+    &--complete {
+      &.cart__step-3 {
+        padding-bottom: 150px;
+      }
+    }
+  }
 }
 
 .cart__complete-wrapper {
@@ -185,7 +193,6 @@
       display: flex;
       height: auto;
       padding-top: 15px;
-      border-bottom: 0;
     }
 
     .cart__rotate-btn {

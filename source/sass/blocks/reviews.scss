@@ -1,0 +1,167 @@
+.reviews {
+  .form__submit {
+    max-width: 360px;
+  }
+}
+
+.reviews__form {
+  gap: 60px;
+
+  @media (max-width: $tablet-width) {
+    gap: 40px;
+  }
+}
+
+.reviews__label-text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28.635px;
+  color: black;
+}
+
+.reviews__inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reviews__star-wrapper {
+  display: flex;
+  gap: 20px;
+  height: 20px;
+}
+
+
+.reviews__statistic-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.reviews__btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.28px;
+    text-transform: none;
+  }
+}
+
+.reviews__raiting-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reviews__point-star-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.reviews__raiting {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+
+.reviews__raiting-star-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews__raiting-number {
+  font-size: 56.98px;
+  font-weight: 400;
+  line-height: 65.12px;
+}
+
+.reviews__raiting-percent {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.28px;
+  text-transform: none;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.reviews__points-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.reviews__points-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.reviews__points-progress {
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  height: 8px;
+  border-radius: 8px;
+  background: #F1F3F4;
+}
+
+.reviews__progres-status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 2px;
+  border-radius: 8px;
+  background: #FBBC04;
+  transition: width 800ms ease-in-out;
+}
+
+//Radio Stars
+.reviews__radio {
+  font-size: 12.5px;
+  text-transform: none;
+  padding-left: 1.8em;
+}
+
+.reviews__radio-input {
+  position: absolute;
+  appearance: none;
+
+  &:checked + .reviews__box {
+    background: no-repeat 50% url(../img/icons/starFull.svg);
+  }
+
+  &:focus + .reviews__box {
+    outline: 1px solid black;
+  }
+
+  &:disabled + .reviews__box {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.reviews__box {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  margin-left: -30px;
+  border-radius: 3px;
+  background: no-repeat 50% url(../img/icons/starEmpty.svg);
+  cursor: pointer;
+}

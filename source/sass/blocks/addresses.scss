@@ -89,15 +89,6 @@
       overflow: unset;
     }
   }
-
-  @media (max-width: $tablet-width) {
-    &--close {
-      .addresses__list {
-        height: 180px;
-        overflow: hidden;
-      }
-    }
-  }
 }
 
 .addresses__city {
