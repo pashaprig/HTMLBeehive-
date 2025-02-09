@@ -67,6 +67,12 @@ img {
   object-fit: cover;
 }
 
+textarea {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -88,9 +94,9 @@ img {
   justify-content: center;
   width: fit-content;
   padding: 20px 40px;
+  color: black;
   background-color: transparent;
   border: 1px solid #000;
-
 
   &:disabled {
     color: white;
@@ -151,9 +157,9 @@ button {
 }
 
 .heading {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 400;
-  line-height: 74.887px;
+  line-height: 65px;
   letter-spacing: 0.771px;
   text-transform: uppercase;
 
@@ -203,7 +209,7 @@ button {
   }
 
   &::after {
-    animation-delay: -.4s;
+    animation-delay: -0.4s;
   }
 }
 

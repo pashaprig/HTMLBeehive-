@@ -97,14 +97,6 @@
       display: none;
     }
   }
-
-  @media (max-width: $tablet-width) {
-    &--complete {
-      &.cart__step-3 {
-        padding-bottom: 150px;
-      }
-    }
-  }
 }
 
 .cart__complete-wrapper {
@@ -206,6 +198,10 @@
   display: flex;
   gap: 20px;
   padding-bottom: 5px;
+
+  &--column {
+    flex-direction: column;
+  }
 }
 
 // MINI CARD
@@ -268,7 +264,7 @@
 .cart__code-form {
   gap: 5px;
 
-  input {
+  input[name="promoCode"] {
     width: 50%;
     padding: 12px 20px;
     font-size: 16px;
@@ -384,7 +380,7 @@
     line-height: 24px;
     border: 0;
     transition: height 0.5s ease-in-out;
-   }
+  }
 
   &--coment-active {
     gap: 20px;
@@ -395,7 +391,7 @@
       transition: height 0.5s ease-in-out;
       padding: 5px;
       border: 1px solid #231f20;
-     }
+    }
   }
 }
 

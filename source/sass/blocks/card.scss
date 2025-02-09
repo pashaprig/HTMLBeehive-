@@ -36,13 +36,18 @@
   text-align: right;
 }
 
+.card__old-price {
+  font-size: 16px;
+  color: #a4a4a4;
+  text-decoration: line-through;
+}
+
 .card__bcg {
   position: relative;
   display: flex;
   flex-direction: column;
   height: 400px;
   background: #f7ca50;
-
 
   a:not(.card__like) {
     height: 100%;
@@ -68,11 +73,29 @@
 
 .card__info {
   position: absolute;
-   display: flex;
+  display: flex;
   gap: 20px;
   width: 100%;
   padding: 5px;
   background: #ececec;
+}
+
+.card__discont {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.381px;
+  background-color: #fbbc04;
+}
+
+.card__type {
+  font-size: 18px;
 }
 
 .card__like {
@@ -109,6 +132,7 @@
   display: flex;
   justify-content: space-between;
   gap: 5px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 26px;
 
@@ -120,15 +144,16 @@
 }
 
 .card__name {
+  font-size: 18px;
   font-weight: 700;
-  line-height: 26px
+  line-height: 26px;
 }
 
 .card__about {
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
-  color: #9F9F9F;
+  color: #9f9f9f;
 }
 
 .card__img {
