@@ -16,7 +16,8 @@
     margin-bottom: 0;
 
     .card__pcice-wrapper,
-    .card__name {
+    .card__name,
+    .card__type {
       line-height: 1.5;
     }
   }
@@ -32,7 +33,7 @@
 }
 
 .card__pcice {
-  min-width: 55px;
+  min-width: 75px;
   text-align: right;
 }
 
@@ -94,10 +95,6 @@
   background-color: #fbbc04;
 }
 
-.card__type {
-  font-size: 18px;
-}
-
 .card__like {
   position: absolute;
   bottom: 10px;
@@ -120,6 +117,7 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  gap: 5px;
   padding: 5px 0;
   border-top: 1px solid #e3c7bf;
 
@@ -132,7 +130,7 @@
   display: flex;
   justify-content: space-between;
   gap: 5px;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 26px;
 

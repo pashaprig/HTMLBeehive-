@@ -107,17 +107,20 @@
 }
 
 .np__big-city {
-  display: flex;
-  height: 32px;
-  padding: 4px 20px;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.40);
-  text-transform: none;
+  button {
+    display: flex;
+    height: 32px;
+    padding: 4px 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    text-transform: none;
+    background-color: white;
 
-  &.active {
-    background-color: #231F20;
-    color: white;
+    &.active {
+      background-color: #231f20;
+      color: white;
+    }
   }
 }

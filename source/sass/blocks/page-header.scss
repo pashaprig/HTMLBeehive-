@@ -177,10 +177,11 @@
 
   &--catalog {
     max-height: 400px;
+    padding: 0;
     background: #f7ca50 no-repeat 50% url("../img/bcg/header-bcg-catalog_page.webp");
     background-size: cover;
 
-    * {
+    *:not(.page-header__banner) {
       display: none;
     }
   }
@@ -353,6 +354,8 @@
 
     &--catalog {
       min-height: 200px;
+      margin-top: 5px;
+      padding: 0;
       background: #f7ca50 no-repeat 50% url("../img/bcg/header-bcg-catalog_page-mob.webp");
       background-size: cover;
     }
@@ -586,4 +589,11 @@
       line-height: 20.263px;
     }
   }
+}
+
+.page-header__banner {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
 }
