@@ -35,7 +35,7 @@
     </div>
   </div> -->
   <div class="page-container authorized">
-    <div class="slide-panel slide-panel--" id="slidePanel">
+    <div class="slide-panel slide-panel--open slide-panel--cart" id="slidePanel">
       <a href="index.html"></a>
       <img width="121" height="83" class="slide-panel__logo" src="img/img/logo.webp" alt="Логотип">
       </a>
@@ -171,6 +171,11 @@
           <div class="cart__wrapper">
             <div class="cart__steps-wrapper">
               <h2 class="cart__heading heading mobile-only">оформлення замовлення</h2>
+              <ul class="cart__status-list">
+                <li class="cart__status-item active"></li>
+                <li class="cart__status-item"></li>
+                <li class="cart__status-item"></li>
+              </ul>
               <div class="cart__step cart__step-1 cart__step--complete">
                 <h3 class="cart__info-heading">1. Контактна інформація</h3>
                 <div class="cart__info-wrapper">
@@ -192,7 +197,7 @@
                 </div>
               </div>
 
-              <div class="cart__step cart__step-2 cart__step--">
+              <div class="cart__step cart__step-2 cart__step--disabled">
                 <h3 class="cart__info-heading">2. Доставка</h3>
                 <div class="cart__info-wrapper">
                   <div class="np">
@@ -316,7 +321,7 @@
                 </div>
                 <div class="cart__content-wrapper">
                   <div class="cart__card-img-wrapper">
-                    <img class="cart__img" width="71" height="81" src="img/img/about.webp" alt="img">
+                    <img class="cart__img" width="55" height="62" src="img/img/about.webp" alt="img">
                     <span>1</span>
                   </div>
                   <div class="cart__card-name-wrapper">
@@ -382,7 +387,7 @@
                     </svg>
                   </button>
                 </div>
-                <div class="cart__content-wrapper">
+                <div class="cart__content-wrapper cart__content-wrapper--pt-0">
                   <div class="cart__code-form-wrapper">
                     <input class="form__input" type="text" name="promo-code" placeholder="Код знижки">
                     <button class="btn cart__btn-usepromo" type="submit" disabled>Застосувати</button>
@@ -423,11 +428,9 @@
                   <span>₴550</span>
                 </div>
                 <form class="form" action="#" method="post">
-                  <button class="btn" type="submit">Оформити замовлення</button>
-                  <label>
-                    <input class="cart__checkbox" type="checkbox" name="" id="" checked>
-                    Підтверджую замовлення і погоджуюсь з правилами користування сайтом
-                  </label>
+                  <button class="btn form__submit cart__btn" type="submit">Оформити замовлення</button>
+                  <a href="#" class="btn cart__btn">ПРОДОВЖИТИ ПОКУПКИ </a>
+                  <p class="form__confirm">Авторизуючись, ви погоджуєтеся з <a>Умовами</a> та <a>Політикою конфіденційності</a> Beehive Cosmetics</p>
                 </form>
               </div>
             </div>

@@ -23,8 +23,7 @@
 .inc-dec-buttons--cart {
   width: fit-content;
 
-  button {
-    background: 0;
+  button.btn {
     border: 0;
 
     &:hover {
@@ -39,6 +38,12 @@
       width: 36px;
       padding: 5px;
       border: 0;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    button.btn {
+      padding: unset;
     }
   }
 }

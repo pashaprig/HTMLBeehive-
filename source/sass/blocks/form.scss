@@ -33,7 +33,6 @@
     .form__submit {
       width: 100%;
     }
-
   }
 
   &--w100 {
@@ -41,18 +40,20 @@
     margin-top: 0;
   }
 
-
-
   @media (max-width: $tablet-width) {
+    .form__inputs-wrapper {
+      gap: 10px;
+    }
+
     &--nav {
       width: 100%;
+      margin-bottom: 40px;
     }
 
     &--cart {
       .form__inputs-wrapper {
         flex-wrap: nowrap;
         flex-direction: column;
-        gap: 20px;
 
         & > * {
           width: 100%;
@@ -112,6 +113,10 @@
   &[type="password"] {
     padding-right: 50px;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 5px;
+  }
 }
 
 .form__policy {
@@ -131,9 +136,17 @@
   color: white;
   background: #191617;
 
+  svg {
+    fill: white;
+  }
+
   &--white {
     color: #191617;
     background: transparent;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 10ex;
   }
 }
 
@@ -142,7 +155,6 @@ a.form__submit {
 }
 
 .form__forgot {
-  margin-top: 20px;
   padding: 0;
   border: 0;
   text-transform: none;
@@ -245,4 +257,10 @@ a.form__submit {
   border: 2px solid #191617;
 }
 
+.form__confirm {
+  text-transform: none;
 
+  a {
+    text-decoration: underline;
+  }
+}

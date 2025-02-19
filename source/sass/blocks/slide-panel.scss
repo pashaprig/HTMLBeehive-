@@ -19,8 +19,12 @@
 
   @media (max-width: $tablet-width) {
     padding: 16px;
-    padding-top: 100px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &--cart {
+      background-color: #EDEDED;
+    }
   }
 }
 
@@ -68,10 +72,11 @@
   flex-direction: column;
   gap: 16px;
   font-weight: 400;
-
-  @media (max-width: $tablet-width) {
-    gap: 10px;
-  }
 }
 
 
+.slide-panel__item {
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+  }
+}

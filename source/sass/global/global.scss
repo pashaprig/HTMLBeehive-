@@ -225,7 +225,19 @@ button {
 }
 
 .error-message {
-  color: tomato;
+  color: red;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.warning-message {
+  color: orange;
   font-size: 14px;
   text-transform: uppercase;
 }

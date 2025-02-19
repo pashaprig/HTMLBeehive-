@@ -10,7 +10,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: white;
+    background: $main-color no-repeat 50% url(../img/bcg/header-bcg-main_page.webp);
+    background-size: cover;
   }
 }
 
