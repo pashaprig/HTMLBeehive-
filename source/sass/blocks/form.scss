@@ -3,6 +3,10 @@
   flex-direction: column;
   gap: 14px;
 
+  &--promo {
+    padding: 0 !important;
+  }
+
   .form__inputs-wrapper {
     display: flex;
     flex-direction: column;
@@ -125,9 +129,11 @@
   font-weight: 400;
   line-height: 20px;
 
-  a {
+  a,
+  .link {
     color: #231f20;
     text-decoration: underline;
+    cursor: pointer;
   }
 }
 
