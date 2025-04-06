@@ -108,3 +108,9 @@
     }
   }
 }
+
+.page-footer__contacts-wrapper {
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
