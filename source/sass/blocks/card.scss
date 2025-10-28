@@ -15,8 +15,7 @@
     font-size: 9px;
     margin-bottom: 0;
 
-    .card__name,
-    .card__type {
+    .card__name {
       line-height: 1.5;
     }
 
@@ -36,17 +35,23 @@
   }
 }
 
-.card__pcice {
-  min-width: 75px;
-  text-align: right;
+.card__type {
+  line-height: 1.5;
 
   @media (max-width: $tablet-width) {
-    min-width: 45px;
+    line-height: normal;
+    text-transform: none;
   }
 }
 
+.card__pcice {
+  min-width: fit-content;
+  text-align: right;
+}
+
 .card__old-price {
-  font-size: 16px; color: #a4a4a4;
+  font-size: 16px;
+  color: #a4a4a4;
   text-decoration: line-through;
 }
 
@@ -86,6 +91,10 @@
   width: 100%;
   padding: 5px;
   background: #ececec;
+
+  svg {
+    min-width: 16px;
+  }
 }
 
 .card__discont {
@@ -152,8 +161,8 @@
     border-bottom: 1px solid #e3c7bf;
   }
 
-  @media (max-width: $tablet-width) {
-    gap: 2px;
+    @media (max-width: $tablet-width) {
+      font-size: 15px;
   }
 }
 
@@ -163,11 +172,11 @@
   line-height: 26px;
 }
 
-.card__about {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #9f9f9f;
+.card__about * {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  color: #9f9f9f !important;
 }
 
 .card__img {

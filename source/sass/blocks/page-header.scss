@@ -92,7 +92,7 @@
   }
 
   &--catalog {
-    min-width: 150px;
+    min-width: 180px;
     min-height: unset;
     background: 0;
   }
@@ -178,8 +178,8 @@
   &--catalog {
     max-height: 400px;
     padding: 0;
-    background: #f7ca50 no-repeat 50% url("../img/bcg/header-bcg-catalog_page.webp");
-    background-size: cover;
+    background-color: #f7ca50;
+    background-image: none;
 
     *:not(.page-header__banner) {
       display: none;

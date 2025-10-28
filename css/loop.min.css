@@ -1,0 +1,1 @@
+.loop-holder{display:flex;white-space:nowrap;overflow:hidden}.loop-holder__text{animation:textLoop 5s linear infinite;margin-right:40px}@keyframes textLoop{0%{transform:translate3d(0, 0, 0)}100%{transform:translate3d(calc(-100% - 42px), 0, 0)}}/*# sourceMappingURL=loop.min.css.map */
